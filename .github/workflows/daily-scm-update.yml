@@ -72,3 +72,10 @@ jobs:
             --title "Oracle Fusion SCM updates - $(date -u +'%Y-%m-%d') (${{ steps.check.outputs.new_item_count }} new)" \
             --body-file "${{ steps.check.outputs.summary_file }}" \
             --label "oracle-scm-update"
+
+      - name: Send to Telegram
+        if: steps.check.outputs.changes_found == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/send_telegram.py "${{ steps.check.outputs.summary_file }}"

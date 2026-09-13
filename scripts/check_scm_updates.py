@@ -7,6 +7,10 @@ pages against the last known snapshot (data/state.json), and — when new
 pages have appeared — writes a dated Markdown report to updates/ and an
 entry to CHANGELOG.md.
 
+Only tracks the modules in module_scope.py (Order Management, Procurement,
+Inventory Management, Product Lifecycle Management, and the planning
+family) — everything else Oracle publishes under SCM readiness is ignored.
+
 If ANTHROPIC_API_KEY is set, new items are additionally summarized into a
 short narrative using Claude; otherwise a plain bullet list is produced.
 """
@@ -21,6 +25,8 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+
+from module_scope import is_tracked
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = ROOT / "data" / "state.json"
@@ -76,7 +82,7 @@ def extract_module_links(html: str, base_url: str, source_name: str) -> dict[str
     for book in soup.select("div.book"):
         title_el = book.select_one(".h4")
         title = title_el.get_text(strip=True) if title_el else None
-        if not title:
+        if not title or not is_tracked(title):
             continue
 
         chosen_href = None
