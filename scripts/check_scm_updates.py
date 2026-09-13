@@ -224,6 +224,16 @@ def main() -> int:
         return 1
 
     previous_state = load_state()
+    is_first_run = previous_state.get("last_checked") is None and not previous_state.get("items")
+    if is_first_run:
+        print(
+            f"First run: baselining {len(current_items)} known SCM readiness page(s) "
+            "without generating a report (nothing to compare against yet)."
+        )
+        save_state(current_items, checked_at)
+        set_output("changes_found", "false")
+        return 0
+
     previous_ids = {item["id"] for item in previous_state.get("items", [])}
     new_ids = [item_id for item_id in current_items if item_id not in previous_ids]
 
