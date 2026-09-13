@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -39,10 +38,6 @@ SOURCES = [
     },
 ]
 
-# Oracle publishes per-module "What's New" pages under this path pattern,
-# e.g. /en/cloud/saas/readiness/scm/26c/scp26c/index.html
-MODULE_LINK_PATTERN = re.compile(r"/readiness/scm/", re.IGNORECASE)
-
 REQUEST_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; OracleFusionSCMUpdateBot/1.0; "
@@ -56,6 +51,13 @@ def fetch(url: str) -> str | None:
     try:
         resp = requests.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
+        # Oracle's server doesn't send a charset in the Content-Type header,
+        # so requests falls back to ISO-8859-1 and mangles UTF-8 punctuation
+        # (e.g. "Here's" -> "Hereâ€™s"). Fall back to the sniffed encoding.
+        if resp.encoding is None or resp.encoding.lower() == "iso-8859-1":
+            resp.encoding = resp.apparent_encoding
+        if os.environ.get("DEBUG_SCRAPE"):
+            print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
         return resp.text
     except requests.RequestException as exc:
         print(f"WARNING: failed to fetch {url}: {exc}", file=sys.stderr)
@@ -63,16 +65,32 @@ def fetch(url: str) -> str | None:
 
 
 def extract_module_links(html: str, base_url: str, source_name: str) -> dict[str, dict]:
+    """Extract readiness entries from Oracle's help-center "book" cards.
+
+    Each entry on the page is a `<div class="book">` containing a `.h4`
+    title (e.g. "Supply Planning What's New 26C") and one or more format
+    links (HTML/PDF) whose visible text is just the format name.
+    """
     soup = BeautifulSoup(html, "html.parser")
     items: dict[str, dict] = {}
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if not MODULE_LINK_PATTERN.search(href):
-            continue
-        absolute_url = urljoin(base_url, href)
-        title = a.get_text(strip=True)
+    for book in soup.select("div.book"):
+        title_el = book.select_one(".h4")
+        title = title_el.get_text(strip=True) if title_el else None
         if not title:
             continue
+
+        chosen_href = None
+        for a in book.find_all("a", href=True):
+            if a.get_text(strip=True).upper() == "HTML":
+                chosen_href = a["href"]
+                break
+        if not chosen_href:
+            first_link = book.find("a", href=True)
+            chosen_href = first_link["href"] if first_link else None
+        if not chosen_href:
+            continue
+
+        absolute_url = urljoin(base_url, chosen_href)
         items[absolute_url] = {
             "id": absolute_url,
             "title": title,
@@ -211,6 +229,16 @@ def main() -> int:
         return 1
 
     previous_state = load_state()
+    is_first_run = previous_state.get("last_checked") is None and not previous_state.get("items")
+    if is_first_run:
+        print(
+            f"First run: baselining {len(current_items)} known SCM readiness page(s) "
+            "without generating a report (nothing to compare against yet)."
+        )
+        save_state(current_items, checked_at)
+        set_output("changes_found", "false")
+        return 0
+
     previous_ids = {item["id"] for item in previous_state.get("items", [])}
     new_ids = [item_id for item_id in current_items if item_id not in previous_ids]
 
