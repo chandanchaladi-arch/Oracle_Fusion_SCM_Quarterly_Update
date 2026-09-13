@@ -1,7 +1,12 @@
 name: Build Latest SCM Update Summary
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      debug_zero:
+        description: "Investigate modules that returned zero features"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,6 +27,8 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Build summary
+        env:
+          DEBUG_ZERO_MODULES: ${{ github.event.inputs.debug_zero }}
         run: python scripts/build_latest_summary.py
 
       - name: Commit summary

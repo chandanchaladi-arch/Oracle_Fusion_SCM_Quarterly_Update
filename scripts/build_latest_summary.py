@@ -113,6 +113,37 @@ def parse_feature_rows(table, page_url: str) -> list[dict]:
 def main() -> int:
     state = json.loads(STATE_PATH.read_text())
     modules = latest_per_module(state["items"])
+
+    if os.environ.get("DEBUG_ZERO_MODULES"):
+        zero_titles = {
+            "Global Trade Management What's New 26C",
+            "Transportation Management What's New 26C",
+            "Warehouse Management What's New 26C",
+        }
+        for item in modules:
+            if item["title"] not in zero_titles:
+                continue
+            url = item["url"]
+            for hop in range(MAX_HOPS + 2):
+                html = fetch(url)
+                if not html:
+                    print(f"DEBUG {item['title']}: hop {hop} fetch failed for {url}", file=sys.stderr)
+                    break
+                soup = BeautifulSoup(html, "html.parser")
+                table = soup.find("table", class_="fsModule")
+                title = soup.find("title")
+                nxt = soup.find("link", rel="next")
+                href = nxt["href"] if nxt and nxt.get("href") else None
+                print(
+                    f"DEBUG {item['title']}: hop {hop} url={url} title={title.get_text(strip=True) if title else None!r} "
+                    f"has_table={bool(table)} next={href!r}",
+                    file=sys.stderr,
+                )
+                if table or not href:
+                    break
+                url = urljoin(url, href)
+        return 0
+
     print(f"Building summary for {len(modules)} current-release modules")
 
     sections = [
