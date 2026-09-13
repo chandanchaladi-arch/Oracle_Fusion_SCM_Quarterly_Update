@@ -93,15 +93,27 @@ def main() -> int:
             next_link = soup.find("link", rel="next")
             next_href = next_link["href"] if next_link and next_link.get("href") else None
             print(f"DEBUG next href: {next_href!r}", file=sys.stderr)
-            if next_href:
-                next_url = requests.compat.urljoin(sample["url"], next_href)
-                next_html = fetch(next_url)
-                if next_html:
-                    next_soup = BeautifulSoup(next_html, "html.parser")
-                    print(f"DEBUG next url: {next_url}", file=sys.stderr)
-                    print(next_soup.prettify()[:8000], file=sys.stderr)
-                    next2 = next_soup.find("link", rel="next")
-                    print(f"DEBUG next-next href: {next2['href'] if next2 and next2.get('href') else None!r}", file=sys.stderr)
+            url = sample["url"]
+            href = next_href
+            for hop in range(4):
+                if not href:
+                    break
+                url = requests.compat.urljoin(url, href)
+                html = fetch(url)
+                if not html:
+                    break
+                soup = BeautifulSoup(html, "html.parser")
+                title = soup.find("title")
+                h1 = soup.find(["h1", "h2"])
+                print(
+                    f"DEBUG hop {hop}: {url} title={title.get_text(strip=True) if title else None!r} "
+                    f"heading={h1.get_text(strip=True) if h1 else None!r}",
+                    file=sys.stderr,
+                )
+                if hop == 2:
+                    print(soup.prettify()[:8000], file=sys.stderr)
+                nxt = soup.find("link", rel="next")
+                href = nxt["href"] if nxt and nxt.get("href") else None
         return 0
 
     state = json.loads(STATE_PATH.read_text())
