@@ -83,14 +83,25 @@ def extract_page_summary(html: str) -> dict:
 
 def main() -> int:
     if os.environ.get("DEBUG_SCRAPE"):
-        # print raw structure for the first module page for inspection
+        # print raw structure for the first module page AND its "next" page
         state = json.loads(STATE_PATH.read_text())
         sample = latest_per_module(state["items"])[0]
         html = fetch(sample["url"])
         if html:
             soup = BeautifulSoup(html, "html.parser")
             print(f"DEBUG sample url: {sample['url']}", file=sys.stderr)
-            print(soup.prettify()[:6000], file=sys.stderr)
+            next_link = soup.find("link", rel="next")
+            next_href = next_link["href"] if next_link and next_link.get("href") else None
+            print(f"DEBUG next href: {next_href!r}", file=sys.stderr)
+            if next_href:
+                next_url = requests.compat.urljoin(sample["url"], next_href)
+                next_html = fetch(next_url)
+                if next_html:
+                    next_soup = BeautifulSoup(next_html, "html.parser")
+                    print(f"DEBUG next url: {next_url}", file=sys.stderr)
+                    print(next_soup.prettify()[:8000], file=sys.stderr)
+                    next2 = next_soup.find("link", rel="next")
+                    print(f"DEBUG next-next href: {next2['href'] if next2 and next2.get('href') else None!r}", file=sys.stderr)
         return 0
 
     state = json.loads(STATE_PATH.read_text())
