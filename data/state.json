@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-09-13T15:04:14.709708+00:00",
+  "last_checked": "2026-09-13T15:20:17.083342+00:00",
   "items": [
     {
       "id": "https://docs.oracle.com/en/cloud/saas/analytics/26r2/fawwn/index.html",
@@ -965,8 +965,7 @@
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/scp26c/index.html",
       "title": "Supply Planning What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/scp26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)",
-      "description": "Oracle Fusion Cloud Supply Planning 26C What's New"
+      "source": "SCM Readiness \u2013 All Releases (archive)"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/sop26c/index.html",
