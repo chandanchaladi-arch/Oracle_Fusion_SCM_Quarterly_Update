@@ -1,0 +1,45 @@
+name: Build Latest SCM Update Summary
+
+on:
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Dump raw structure of one sample module page instead of building the summary"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  build-summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Build summary
+        env:
+          DEBUG_SCRAPE: ${{ github.event.inputs.debug }}
+        run: python scripts/build_latest_summary.py
+
+      - name: Commit summary
+        if: github.event.inputs.debug != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/Latest_SCM_Update_Summary.md
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Rebuild latest SCM quarterly update summary"
+            git push
+          fi
