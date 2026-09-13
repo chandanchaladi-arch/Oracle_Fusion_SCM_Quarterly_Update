@@ -26,9 +26,12 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
+from module_scope import is_tracked
+
 ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = ROOT / "data" / "state.json"
 OUT_PATH = ROOT / "docs" / "Latest_SCM_Update_Summary.md"
+TELEGRAM_SUMMARY_PATH = ROOT / "docs" / "Latest_SCM_Update_Summary_telegram.txt"
 
 REQUEST_HEADERS = {
     "User-Agent": (
@@ -57,6 +60,8 @@ def fetch(url: str) -> str | None:
 def latest_per_module(items: list[dict]) -> list[dict]:
     by_code: dict[str, list[tuple[str, dict]]] = defaultdict(list)
     for item in items:
+        if not is_tracked(item["title"]):
+            continue
         m = MODULE_RE.search(item["url"])
         if not m:
             continue
@@ -151,6 +156,7 @@ def main() -> int:
         f"_Generated from the current readiness snapshot ({state.get('last_checked')})._",
         "",
     ]
+    module_counts: list[tuple[str, int]] = []
     for item in modules:
         sections.append(f"## {item['title']}")
         sections.append("")
@@ -161,10 +167,12 @@ def main() -> int:
         if not table:
             sections.append("_Could not locate the feature summary table for this module._")
             sections.append("")
+            module_counts.append((item["title"], 0))
             continue
 
         rows = parse_feature_rows(table, page_url)
         print(f"  {item['title']}: {len(rows)} feature(s)")
+        module_counts.append((item["title"], len(rows)))
         if not rows:
             sections.append("_No features listed._")
             sections.append("")
@@ -180,6 +188,21 @@ def main() -> int:
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text("\n".join(sections))
     print(f"Wrote {OUT_PATH}")
+
+    total = sum(count for _, count in module_counts)
+    telegram_lines = [
+        "Oracle Fusion Cloud SCM — Latest Update Summary",
+        f"({state.get('last_checked', '')[:10]})",
+        "",
+    ]
+    for title, count in module_counts:
+        module_name = title.split(" What's New")[0]
+        telegram_lines.append(f"• {module_name}: {count} feature(s)")
+    telegram_lines.append("")
+    telegram_lines.append(f"Total: {total} features across {len(module_counts)} modules.")
+    telegram_lines.append("Full details attached.")
+    TELEGRAM_SUMMARY_PATH.write_text("\n".join(telegram_lines))
+    print(f"Wrote {TELEGRAM_SUMMARY_PATH}")
     return 0
 
 
