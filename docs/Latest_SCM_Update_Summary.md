@@ -81,7 +81,38 @@ _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00
 
 [Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/index.html)
 
-_Could not locate the feature summary table for this module._
+| Area | Feature | Impact | Action to Enable |
+|---|---|---|---|
+| AI Infrastructure | [Slash Command for Prompt Selection](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49756.htm#gtm26c-f49756) | None | Setup Required |
+| AI Infrastructure | [AI Agent Studio - Seeded Business Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49755.htm#gtm26c-f49755) | Small scale | None |
+| BIP Authentication Changes | [Deprecate Basic Auth for BIP SOAP Web Service](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47435.htm#gtm26c-f47435) | None | Setup Required |
+| BIP Authentication Changes | [OAuth Authentication for BI Publisher SOAP Report Services](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49400.htm#gtm26c-f49400) | None | Setup Required |
+| Document Management | [REST API Custom Action to Add/Link a Document to Multiple Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f43363.htm#gtm26c-f43363) | None | Setup Required |
+| Enhanced Workbench Improvements | [Single Transaction Option for Workbench Inline Editing and Mass Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49891.htm#gtm26c-f49891) | None | Setup Required |
+| Enhanced Workbench Improvements | [Inline Edit Always Shows External ID (XID)](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49641.htm#gtm26c-f49641) | Small scale | None |
+| Enhanced Workbench Improvements | [Redwood Theme For Enhanced Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49885.htm#gtm26c-f49885) | Small scale | None |
+| Global Trade Management (Base) | [Deprecate Split Line For Penalty Reporting](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49604.htm#gtm26c-f49604) | None | Setup Required |
+| Product Classification | [Enhanced Support for Penalty Codes and Penalty Exemption Codes](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46553.htm#gtm26c-f46553) | None | Setup Required |
+| Product Classification | [GTM Product Classification Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46556.htm#gtm26c-f46556) | None | Setup Required |
+| Product Classification | [New Action Definition for Item Classification](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46358.htm#gtm26c-f46358) | None | Setup Required |
+| REST Services | [Apply Custom Fetch Size on REST Child Resources](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47431.htm#gtm26c-f47431) | None | Setup Required |
+| REST Services | [Enable Req Att Validation For REST API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46278.htm#gtm26c-f46278) | None | Setup Required |
+| REST Services | [Honor Update Flag For REST RefNum Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f43369.htm#gtm26c-f43369) | None | Setup Required |
+| REST Services | [Required Attribute Validation for REST Resource Creation and Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47315.htm#gtm26c-f47315) | None | Setup Required |
+| Redwood UI | [Try the New Redwood Experience](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47313.htm#gtm26c-f47313) | Larger scale | None |
+| Restricted Party Screening | [Asynchronous Support for Restricted Party Screening](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46360.htm#gtm26c-f46360) | None | Setup Required |
+| Restricted Party Screening | [GTM Restricted Party Pre-processing Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46557.htm#gtm26c-f46557) | None | Setup Required |
+| Restricted Party Screening | [Include/Exclude Agency Codes in Restricted Party Screening Configuration](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46359.htm#gtm26c-f46359) | None | Setup Required |
+| Restricted Party Screening | [RPLS Enhancements for Forward and Reverse Matching](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46595.htm#gtm26c-f46595) | None | Setup Required |
+| Restricted Party Screening | [Enhancement to Restricted Party Screening Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49353.htm#gtm26c-f49353) | Small scale | None |
+| Restricted Party Screening | [Set Trusted or Prohibited Party for Restricted Party Screening](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47422.htm#gtm26c-f47422) | Small scale | None |
+| Trade Compliance | [Enhancements to License Management](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49597.htm#gtm26c-f49597) | Small scale | None |
+| Trade Compliance | [Transaction Type/Declaration Type Available on Line UIs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49602.htm#gtm26c-f49602) | Small scale | None |
+| Trade Incentive Programs | [Enhanced Workbench Improvements for Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46552.htm#gtm26c-f46552) | None | Setup Required |
+| Trade Incentive Programs | [Physical Inventory Tracking Available in Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46558.htm#gtm26c-f46558) | None | Setup Required |
+| Trade Incentive Programs | [Copy Additional Data from Inventory to Exit Declaration Line](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49634.htm#gtm26c-f49634) | Small scale | None |
+| Trade Incentive Programs | [Entry Exit Configuration on Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46555.htm#gtm26c-f46555) | Small scale | None |
+| XML Integrations | [Enable Friendly XML Schema Validation Messages](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49483.htm#gtm26c-f49483) | None | Setup Required |
 
 ## Inventory Management What's New 26D
 
@@ -474,10 +505,89 @@ _Could not locate the feature summary table for this module._
 
 [Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/index.html)
 
-_Could not locate the feature summary table for this module._
+| Area | Feature | Impact | Action to Enable |
+|---|---|---|---|
+| 3D With Ground Schedules, Ground Consols and Ocean FCL Consols | [3D Packing For Ground Schedule and Ground and Ocean FCL Consols](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46515.htm#otm26c-f46515) | None | Setup Required |
+| 3D With Ground Schedules, Ground Consols and Ocean FCL Consols | [Use 3D Load Config for Ground Schedule and Consol](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47442.htm#otm26c-f47442) | None | Setup Required |
+| AI Agents | [AI Agent: Dock Scheduling Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46361.htm#otm26c-f46361) | None | Setup Required |
+| AI Agents | [AI Agent: Shipment Change Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49530.htm#otm26c-f49530) | None | Setup Required |
+| AI Infrastructure | [Slash Command for Prompt Selection](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49756.htm#otm26c-f49756) | None | Setup Required |
+| AI Infrastructure | [AI Agent Studio - Seeded Business Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49755.htm#otm26c-f49755) | Small scale | None |
+| BIP Authentication Changes | [Deprecate Basic Auth for BIP SOAP Web Service](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47435.htm#otm26c-f47435) | None | Setup Required |
+| BIP Authentication Changes | [OAuth Authentication for BI Publisher SOAP Report Services](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49400.htm#otm26c-f49400) | None | Setup Required |
+| Data Export API | [Export API - Delete Supported For Tender Collab Tables](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49639.htm#otm26c-f49639) | None | Setup Required |
+| Document Management | [REST API Custom Action to Add/Link a Document to Multiple Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f43363.htm#otm26c-f43363) | None | Setup Required |
+| Document Management | [Planner Added Documents In Tendering Workflow](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46514.htm#otm26c-f46514) | Small scale | None |
+| Enhanced Workbench Improvements | [Single Transaction Option for Workbench Inline Editing and Mass Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49891.htm#otm26c-f49891) | None | Setup Required |
+| Enhanced Workbench Improvements | [Order Releases for Shipment Stop - Public Saved Query](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49557.htm#otm26c-f49557) | None | Setup Required |
+| Enhanced Workbench Improvements | [Inline Edit Always Shows External ID (XID)](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49641.htm#otm26c-f49641) | Small scale | None |
+| Enhanced Workbench Improvements | [Redwood Theme For Enhanced Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49885.htm#otm26c-f49885) | Small scale | None |
+| External Service Engine | [External Service Engine (ESE) Database Cache](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49742.htm#otm26c-f49742) | None | Setup Required |
+| Ground and Ocean FCL Consols | [Packing Fixed Option for Ocean FCL and Ground Consol Shipment Equipment](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47378.htm#otm26c-f47378) | None | Setup Required |
+| Logistics Network Modeling | [Child Table Support For Scenario Data Rules](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49765.htm#otm26c-f49765) | None | Setup Required |
+| Logistics Network Modeling | [Configurable Mapping Option for Early Pickup Date and Late Delivery Date](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49367.htm#otm26c-f49367) | None | Setup Required |
+| Logistics Network Modeling | [Copy Parameter Override](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46332.htm#otm26c-f46332) | Small scale | None |
+| Mobile | [Mobile Invoice Enhancements](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49354.htm#otm26c-f49354) | None | Setup Required |
+| Multi-stop Improvements | [Multi-Stop Petal Breakup to Retain Times, Equipment, and Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49723.htm#otm26c-f49723) | None | Setup Required |
+| Multi-stop Improvements | [Multi-stop Sequencing Stowaway](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49730.htm#otm26c-f49730) | None | Setup Required |
+| Multi-stop Improvements | [Petal Breakup with Capacity Limits](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49724.htm#otm26c-f49724) | None | Setup Required |
+| Open Tender and Online Booking/Tendering | [Automation Agent Actions - Shipment Group Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49507.htm#otm26c-f49507) | None | Setup Required |
+| Open Tender and Online Booking/Tendering | [Automation Agent Actions - Shipment Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49508.htm#otm26c-f49508) | None | Setup Required |
+| Open Tender and Online Booking/Tendering | [Open Tender - Service Provider Bid Increase Check](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46516.htm#otm26c-f46516) | None | Setup Required |
+| Operational Improvements | [Fetch All Shipment Tracking Events](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47436.htm#otm26c-f47436) | None | Setup Required |
+| Operational Improvements | [SMD Sync With Order On SSU Count Increase](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47438.htm#otm26c-f47438) | None | Setup Required |
+| Operational Improvements | [Suppress Error When No REST RIQ Results Found](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47439.htm#otm26c-f47439) | None | Setup Required |
+| Operational Improvements | [Use Improved Split Order Movement Action](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46318.htm#otm26c-f46318) | None | Setup Required |
+| REST Enabled Actions | [REST Enable Actions for Open Tender - Spot Bid Tender and Broadcast Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49509.htm#otm26c-f49509) | None | Setup Required |
+| REST Enabled Actions | [REST Enabled Action - Change Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46517.htm#otm26c-f46517) | None | Setup Required |
+| REST Services | [Apply Custom Fetch Size on REST Child Resources](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47431.htm#otm26c-f47431) | None | Setup Required |
+| REST Services | [Enable Req Att Validation For REST API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46278.htm#otm26c-f46278) | None | Setup Required |
+| REST Services | [Honor Update Flag For REST RefNum Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f43369.htm#otm26c-f43369) | None | Setup Required |
+| REST Services | [Required Attribute Validation for REST Resource Creation and Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47315.htm#otm26c-f47315) | None | Setup Required |
+| Redwood UI | [Try the New Redwood Experience](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47313.htm#otm26c-f47313) | Larger scale | None |
+| Transportation Operational Intelligence | [Transportation Operational Intelligence (TOI) Event Lat/Long](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49361.htm#otm26c-f49361) | None | Setup Required |
+| Usability Enhancements | [Preferred Routing - Order Routing Rule](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46451.htm#otm26c-f46451) | None | Setup Required |
+| Usability Enhancements | [Multi-Day Calendar Overrides](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46348.htm#otm26c-f46348) | Small scale | None |
+| Usability Enhancements | [Rate Shopping - Rate Service Visibility - Change Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46452.htm#otm26c-f46452) | Small scale | None |
+| XML Integrations | [Enable Friendly XML Schema Validation Messages](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49483.htm#otm26c-f49483) | None | Setup Required |
 
 ## Warehouse Management What's New 26C
 
 [Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/index.html)
 
-_Could not locate the feature summary table for this module._
+| Area | Feature | Impact | Action to Enable |
+|---|---|---|---|
+| Cloud SCM Integration | [Enhancements to Reconciliation Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50167.htm#wms26c-f50167) | None | Setup Required |
+| Inbound Logistics | [Enhancements to Create LPN for Pallet Handling](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50165.htm#wms26c-f50165) | None | Setup Required |
+| Inbound Logistics | [Locate Received LPNs During Receive Entire Shipment](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50595.htm#wms26c-f50595) | None | Setup Required |
+| Inbound Logistics | [Print Item Labels using an API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f47383.htm#wms26c-f47383) | None | REST APIs |
+| Inbound Logistics | [Support for Destination LPN Retention during Split Inbound LPN](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50170.htm#wms26c-f50170) | None | Setup Required |
+| Inbound Logistics | [Improve Receiving Execution with Shipment Progress Visibility in Mobile](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50590.htm#wms26c-f50590) | Small scale | None |
+| Inventory Operations | [AI Agent: Inventory Expiry Assistant - Enhanced Execution Controls](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f47380.htm#wms26c-f47380) | None | Setup Required |
+| Inventory Operations | [Cancel Picking Allocations Only from Wave Inquiry](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50174.htm#wms26c-f50174) | None | Setup Required |
+| Inventory Operations | [Enhanced Configuration for Managing Multiple Wave Instances](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49717.htm#wms26c-f49717) | None | Setup Required |
+| Inventory Operations | [Honor Expiry Date Range Rules for Cross Dock](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50160.htm#wms26c-f50160) | None | Setup Required |
+| Inventory Operations | [Improvements to Assign Load with Auto-Generated Load Number](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50168.htm#wms26c-f50168) | None | Setup Required |
+| Inventory Operations | [Support Selective Approval of CC Adjustment Detail Records](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49714.htm#wms26c-f49714) | None | Setup Required |
+| Inventory Operations | [Updates to Modify Item Quantity API Inventory History Transaction](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50164.htm#wms26c-f50164) | None | REST APIs |
+| Inventory Operations | [Honor Expiry Date Range Rules for Cross Dock Pick And Allocate](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50402.htm#wms26c-f50402) | Small scale | None |
+| Inventory Operations | [Honor Expiry Date Range Rules for Direct Allocation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50401.htm#wms26c-f50401) | Small scale | None |
+| Inventory Operations | [Honor Expiry Date Range, Order Prioritization Rules for Distribute LPN](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50161.htm#wms26c-f50161) | Small scale | None |
+| Outbound Logistics | [Apply Default Lock Code for Inventory Discrepancy in Outbound Audit](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50166.htm#wms26c-f50166) | None | Setup Required |
+| Outbound Logistics | [Assign and Unassign Orders from Outbound Load Number Orders](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50175.htm#wms26c-f50175) | None | Setup Required |
+| Outbound Logistics | [Cancel Picking Allocations only for a Replenishment with Picking Wave](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49718.htm#wms26c-f49718) | None | Setup Required |
+| Outbound Logistics | [Enhance Queries for Wave Research Advisor AI Agent](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50053.htm#wms26c-f50053) | Small scale | Potential Setup |
+| Outbound Logistics | [Improvements to Combine Outbound LPN supporting ‘Extra Item Property Display’](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50171.htm#wms26c-f50171) | None | Setup Required |
+| Outbound Logistics | [Print Location Labels using an API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49716.htm#wms26c-f49716) | None | REST APIs |
+| Outbound Logistics | [Support Substitution and Shorting in Pallet Move Auto Pack Task](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50163.htm#wms26c-f50163) | None | Setup Required |
+| Outbound Logistics | [Support Substitution for Allocation UOM for Case/Pack in Pack NC Active](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49715.htm#wms26c-f49715) | None | Setup Required |
+| Outbound Logistics | [Support task_nbr parameter in Pick Confirm API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50173.htm#wms26c-f50173) | None | REST APIs |
+| Outbound Logistics | [UPS Standard Integration Supports Shipping to Canada](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50178.htm#wms26c-f50178) | Small scale | None |
+| Redwood Mobile WMS | [Enhancements to Redwood Mobile](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50399.htm#wms26c-f50399) | None | Setup Required |
+| WMS Common | [Continued Redwood Migration for Web UI](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49713.htm#wms26c-f49713) | None | Setup Required |
+| WMS Common | [Email Address Endpoints in Endpoint Configuration](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50177.htm#wms26c-f50177) | None | Setup Required |
+| WMS Common | [Enhancement to Framework Log UI](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50176.htm#wms26c-f50176) | None | Setup Required |
+| WMS Common | [Improvements to Get API Support](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50172.htm#wms26c-f50172) | None | REST APIs |
+| WMS Common | [Introduce Configuration Migration Pack](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49972.htm#wms26c-f49972) | None | Setup Required |
+| WMS Common | [Print Label Support to LPN Inquiry and RF Pallet Inquiry](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50169.htm#wms26c-f50169) | None | Setup Required |
+| Warehouse Workforce Management | [View Employee Timeline Metrics](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50162.htm#wms26c-f50162) | Small scale | Potential Setup |
