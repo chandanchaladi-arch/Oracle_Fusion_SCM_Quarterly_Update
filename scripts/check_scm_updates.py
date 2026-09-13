@@ -62,7 +62,9 @@ def fetch(url: str) -> str | None:
             print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
             print(f"DEBUG {url}: total <a> tags={len(all_links)}", file=sys.stderr)
             for a in all_links:
-                print(f"DEBUG LINK href={a['href']!r} text={a.get_text(strip=True)!r}", file=sys.stderr)
+                if "scp26c/index.html" in a["href"] or "scp26d/index.html" in a["href"]:
+                    row = a.find_parent("tr") or a.find_parent("li") or a.parent
+                    print(f"DEBUG ROW HTML around {a['href']!r}:\n{row.prettify()}", file=sys.stderr)
         return resp.text
     except requests.RequestException as exc:
         print(f"WARNING: failed to fetch {url}: {exc}", file=sys.stderr)
