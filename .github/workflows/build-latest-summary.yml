@@ -1,12 +1,7 @@
 name: Build Latest SCM Update Summary
 
 on:
-  workflow_dispatch:
-    inputs:
-      debug:
-        description: "Dump raw structure of one sample module page instead of building the summary"
-        type: boolean
-        default: false
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -27,12 +22,9 @@ jobs:
         run: pip install -r scripts/requirements.txt
 
       - name: Build summary
-        env:
-          DEBUG_SCRAPE: ${{ github.event.inputs.debug }}
         run: python scripts/build_latest_summary.py
 
       - name: Commit summary
-        if: github.event.inputs.debug != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
