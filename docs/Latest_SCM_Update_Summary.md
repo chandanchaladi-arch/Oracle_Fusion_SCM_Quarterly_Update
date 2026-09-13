@@ -2,26 +2,6 @@
 
 _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00)._
 
-## Common Technologies and User Experience What's New 26D
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| AI Agent Studio | [Add instruction guardrails to LLM nodes](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51437.htm#common26d-f51437) | None | Setup Required |
-| AI Agent Studio | [Configure models and manage model lifecycle](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51371.htm#common26d-f51371) | Small scale | Potential Setup |
-| AI Agent Studio | [Integrate AI Agent Studio applications and workflows with CI/CD](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51372.htm#common26d-f51372) | Small scale | Potential Setup |
-| AI Agent Studio | [Manage AI unit budget, consumption, and controls](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51348.htm#common26d-f51348) | None | Setup Required |
-| AI Agent Studio | [Test and validate AI Agent Studio workflows with ATLAS](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51373.htm#common26d-f51373) | Small scale | Potential Setup |
-| Applications Security | [Multifactor authentication (MFA)](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f50558.htm#common26d-f50558) | Larger scale | Potential Setup |
-| Configuration and Extensibility | [Contextual announcement banner on Redwood pages](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f50831.htm#common26d-f50831) | Larger scale | Potential Setup |
-| Configuration and Extensibility | [Redwood appearance editor: Override accessibility checks and use as primary color](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f50832.htm#common26d-f50832) | Larger scale | Potential Setup |
-| Reporting and Analytics | [Deprecated and new BI view objects in Oracle BI Cloud Connector](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f24269.htm#common26d-f24269) | Small scale | None |
-| Reporting and Analytics | [What's notable and different in Oracle Transactional Business Intelligence](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f28855.htm#common26d-f28855) | Larger scale | None |
-| User Experience | [Record issues on Redwood pages](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f50830.htm#common26d-f50830) | Larger scale | Potential Setup |
-| User Experience | [Changes in Oracle Fusion Cloud Applications Sign In page](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f50559.htm#common26d-f50559) | Small scale | None |
-| User Experience | [Oracle ADF Desktop Integration add-in](https://docs.oracle.com/en/cloud/saas/readiness/common/26d/common26d/26D-common-wn-f51251.htm#common26d-f51251) | Small scale | None |
-
 ## Demand Management What's New 26D
 
 [Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/index.html)
@@ -76,43 +56,6 @@ _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00
 | Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50330.htm#demand26d-f50330) | None | Setup Required |
 | Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50331.htm#demand26d-f50331) | None | Setup Required |
 | Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50333.htm#demand26d-f50333) | None | Setup Required |
-
-## Global Trade Management What's New 26C
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| AI Infrastructure | [Slash Command for Prompt Selection](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49756.htm#gtm26c-f49756) | None | Setup Required |
-| AI Infrastructure | [AI Agent Studio - Seeded Business Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49755.htm#gtm26c-f49755) | Small scale | None |
-| BIP Authentication Changes | [Deprecate Basic Auth for BIP SOAP Web Service](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47435.htm#gtm26c-f47435) | None | Setup Required |
-| BIP Authentication Changes | [OAuth Authentication for BI Publisher SOAP Report Services](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49400.htm#gtm26c-f49400) | None | Setup Required |
-| Document Management | [REST API Custom Action to Add/Link a Document to Multiple Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f43363.htm#gtm26c-f43363) | None | Setup Required |
-| Enhanced Workbench Improvements | [Single Transaction Option for Workbench Inline Editing and Mass Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49891.htm#gtm26c-f49891) | None | Setup Required |
-| Enhanced Workbench Improvements | [Inline Edit Always Shows External ID (XID)](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49641.htm#gtm26c-f49641) | Small scale | None |
-| Enhanced Workbench Improvements | [Redwood Theme For Enhanced Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49885.htm#gtm26c-f49885) | Small scale | None |
-| Global Trade Management (Base) | [Deprecate Split Line For Penalty Reporting](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49604.htm#gtm26c-f49604) | None | Setup Required |
-| Product Classification | [Enhanced Support for Penalty Codes and Penalty Exemption Codes](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46553.htm#gtm26c-f46553) | None | Setup Required |
-| Product Classification | [GTM Product Classification Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46556.htm#gtm26c-f46556) | None | Setup Required |
-| Product Classification | [New Action Definition for Item Classification](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46358.htm#gtm26c-f46358) | None | Setup Required |
-| REST Services | [Apply Custom Fetch Size on REST Child Resources](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47431.htm#gtm26c-f47431) | None | Setup Required |
-| REST Services | [Enable Req Att Validation For REST API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46278.htm#gtm26c-f46278) | None | Setup Required |
-| REST Services | [Honor Update Flag For REST RefNum Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f43369.htm#gtm26c-f43369) | None | Setup Required |
-| REST Services | [Required Attribute Validation for REST Resource Creation and Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47315.htm#gtm26c-f47315) | None | Setup Required |
-| Redwood UI | [Try the New Redwood Experience](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47313.htm#gtm26c-f47313) | Larger scale | None |
-| Restricted Party Screening | [Asynchronous Support for Restricted Party Screening](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46360.htm#gtm26c-f46360) | None | Setup Required |
-| Restricted Party Screening | [GTM Restricted Party Pre-processing Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46557.htm#gtm26c-f46557) | None | Setup Required |
-| Restricted Party Screening | [Include/Exclude Agency Codes in Restricted Party Screening Configuration](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46359.htm#gtm26c-f46359) | None | Setup Required |
-| Restricted Party Screening | [RPLS Enhancements for Forward and Reverse Matching](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46595.htm#gtm26c-f46595) | None | Setup Required |
-| Restricted Party Screening | [Enhancement to Restricted Party Screening Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49353.htm#gtm26c-f49353) | Small scale | None |
-| Restricted Party Screening | [Set Trusted or Prohibited Party for Restricted Party Screening](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f47422.htm#gtm26c-f47422) | Small scale | None |
-| Trade Compliance | [Enhancements to License Management](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49597.htm#gtm26c-f49597) | Small scale | None |
-| Trade Compliance | [Transaction Type/Declaration Type Available on Line UIs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49602.htm#gtm26c-f49602) | Small scale | None |
-| Trade Incentive Programs | [Enhanced Workbench Improvements for Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46552.htm#gtm26c-f46552) | None | Setup Required |
-| Trade Incentive Programs | [Physical Inventory Tracking Available in Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46558.htm#gtm26c-f46558) | None | Setup Required |
-| Trade Incentive Programs | [Copy Additional Data from Inventory to Exit Declaration Line](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49634.htm#gtm26c-f49634) | Small scale | None |
-| Trade Incentive Programs | [Entry Exit Configuration on Trade Incentive Programs](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f46555.htm#gtm26c-f46555) | Small scale | None |
-| XML Integrations | [Enable Friendly XML Schema Validation Messages](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/gtm26c/26C-gtm-wn-f49483.htm#gtm26c-f49483) | None | Setup Required |
 
 ## Inventory Management What's New 26D
 
@@ -176,76 +119,6 @@ _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00
 | Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50330.htm#inv26d-f50330) | None | Setup Required |
 | Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50331.htm#inv26d-f50331) | None | Setup Required |
 | Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50333.htm#inv26d-f50333) | None | Setup Required |
-
-## Maintenance What's New 26D
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| Maintenance | [Configure additional fields for asset details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50746.htm#maint26d-f50746) | None | Application Composer adjustments to expose |
-| Maintenance | [Use business rules and guided journey enhancements to configure Redwood pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51005.htm#maint26d-f51005) | None | Visual Builder |
-| Maintenance | [Add parts from asset parts list to work orders in Maintenance Supervision](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51004.htm#maint26d-f51004) | Small scale | None |
-| Maintenance | [Associate a technician to multiple labor resources](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f46400.htm#maint26d-f46400) | Larger scale | None |
-| Maintenance | [Manage multiple work orders using mass actions in Maintenance Supervision](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51008.htm#maint26d-f51008) | Small scale | None |
-| Maintenance | [Perform additional actions in the new Redwood Asset Details page](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50745.htm#maint26d-f50745) | Small scale | None |
-| Maintenance | [Perform additional actions in the new Redwood Asset Hierarchy page](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51009.htm#maint26d-f51009) | Small scale | None |
-| SCM Common Components | [Define plant parameters using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51079.htm#maint26d-f51079) | None | Setup Required |
-| SCM Common Components | [Setup project-driven supply chain defaults using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51078.htm#maint26d-f51078) | None | Setup Required |
-| SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f51077.htm#maint26d-f51077) | None | Opt In plus Setup |
-| Service Logistics | [Capture quality events for returns and field service debrief](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50143.htm#maint26d-f50143) | Larger scale | Potential Setup |
-| Service Logistics | [Include substitutions and supersessions in automatic parts search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50141.htm#maint26d-f50141) | Small scale | Potential Setup |
-| Service Logistics | [Incorporate distance into parts search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50142.htm#maint26d-f50142) | None | Setup Required |
-| Service Logistics | [Receive purchase orders in field service Receive Part UI](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50144.htm#maint26d-f50144) | None | Setup Required |
-| Service Logistics | [Support credit card payment method for parts orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50140.htm#maint26d-f50140) | None | Setup Required |
-| Service Logistics | [Support destination warehouses in parts search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/maint26d/26D-maintenance-wn-f50145.htm#maint26d-f50145) | None | Setup Required |
-
-## Manufacturing What's New 26D
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| Discrete Manufacturing | [Capture parent lot and lot information for production transactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f51192.htm#mfg26d-f51192) | None | Setup Required |
-| Discrete Manufacturing | [Execute production campaigns](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50436.htm#mfg26d-f50436) | None | Setup Required |
-| Discrete Manufacturing | [Implement work definition changes with redlining, versioning, and approval](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50441.htm#mfg26d-f50441) | None | Setup Required |
-| Discrete Manufacturing | [Restrict cancellations for work orders with material, resource, or operation transactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50427.htm#mfg26d-f50427) | None | Setup Required |
-| Discrete Manufacturing | [Review redlined changes in electronic signature enabled work definitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50412.htm#mfg26d-f50412) | None | Opt In |
-| Discrete Manufacturing | [Use additional filters to search for work definitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50413.htm#mfg26d-f50413) | Small scale | Potential Setup |
-| Discrete Manufacturing | [Use on-hand inventory by grade and expiration date in work orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50426.htm#mfg26d-f50426) | None | Setup Required |
-| Flow Manufacturing | [Associate delivery schedules with Kanban pull sequences](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50429.htm#mfg26d-f50429) | None | Opt In plus Setup |
-| Manufacturing | [Define and execute parallel operations on discrete production lines](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50434.htm#mfg26d-f50434) | None | Setup Required |
-| Manufacturing | [Propagate descriptive flexfields from work definitions to work orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50433.htm#mfg26d-f50433) | None | Setup Required |
-| Manufacturing | [Scan barcodes and QR codes with multiple fields](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50420.htm#mfg26d-f50420) | None | Setup Required |
-| Manufacturing | [Use the production line calendar to calculate performance metrics in Production Supervision](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50417.htm#mfg26d-f50417) | Small scale | Potential Setup |
-| Process Manufacturing | [Approve dispense areas using Electronic Records and Electronic Signatures](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50424.htm#mfg26d-f50424) | None | Setup Required |
-| Process Manufacturing | [Approve dispense rules using Electronic Records and Electronic Signatures](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50418.htm#mfg26d-f50418) | None | Setup Required |
-| Process Manufacturing | [Approve dispense transactions using Electronic Records and Electronic Signatures](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50437.htm#mfg26d-f50437) | None | Setup Required |
-| Process Manufacturing | [Capture parent lot and lot information for production transactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50435.htm#mfg26d-f50435) | None | Setup Required |
-| Process Manufacturing | [Create dispensing instructions and enforce operator compliance](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50415.htm#mfg26d-f50415) | None | Setup Required |
-| Process Manufacturing | [Execute production campaigns for batches](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50440.htm#mfg26d-f50440) | None | Setup Required |
-| Process Manufacturing | [Implement recipe changes with redlining, versioning, and approval](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50425.htm#mfg26d-f50425) | None | Setup Required |
-| Process Manufacturing | [Record dispensed material quantities using connected equipment](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50423.htm#mfg26d-f50423) | None | Setup Required |
-| Process Manufacturing | [Restrict cancellations for batches with ingredient, resource, or operation transactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50422.htm#mfg26d-f50422) | None | Setup Required |
-| Process Manufacturing | [Review redlined changes in electronic signature enabled recipes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50439.htm#mfg26d-f50439) | None | Setup Required |
-| Process Manufacturing | [Use additional filters to search for recipes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50419.htm#mfg26d-f50419) | Small scale | Potential Setup |
-| Process Manufacturing | [Use on-hand inventory by grade and expiration date in production batches](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50909.htm#mfg26d-f50909) | None | Setup Required |
-| Process Manufacturing | [Verify dispensing instructions using Electronic Records and Electronic Signatures](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50438.htm#mfg26d-f50438) | None | Setup Required |
-| Process Manufacturing | [Get substitution recommendations for high-risk, unreleased batches using the Batch Conformance Guide](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50431.htm#mfg26d-f50431) | Larger scale | None |
-| Quality Inspection Management | [Define customer inspection plans and compare inspection results](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50529.htm#mfg26d-f50529) | None | Opt In plus Setup |
-| Quality Inspection Management | [Use electronic signatures and electronic records when activating quality inspection characteristics](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50531.htm#mfg26d-f50531) | None | Setup Required |
-| Quality Inspection Management | [Inspect work in process using industrial handheld devices](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50530.htm#mfg26d-f50530) | Small scale | None |
-| SCM Common Components | [Define plant parameters using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f51079.htm#mfg26d-f51079) | None | Setup Required |
-| SCM Common Components | [Setup project-driven supply chain defaults using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f51078.htm#mfg26d-f51078) | None | Setup Required |
-| SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f51077.htm#mfg26d-f51077) | None | Opt In plus Setup |
-| Smart Operations | [Display operational parameters from connected equipment during production execution](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50430.htm#mfg26d-f50430) | None | Opt In plus Setup |
-| Smart Operations | [Track work order execution time for individual operators](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50414.htm#mfg26d-f50414) | None | Opt In plus Setup |
-| Smart Operations | [Use operational parameters and enhanced execution capabilities when simultaneously executing multiple operations at a workstation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50432.htm#mfg26d-f50432) | None | Setup Required |
-| Smart Operations | [Use OAuth authentication for your connected equipment integrations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50421.htm#mfg26d-f50421) | Small scale | None |
-| Supply Chain Orchestration | [Enable intra-organizational material transfers for transfer supply requests originating from Self Service Procurement](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50332.htm#mfg26d-f50332) | None | Setup Required |
-| Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50330.htm#mfg26d-f50330) | None | Setup Required |
-| Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50331.htm#mfg26d-f50331) | None | Setup Required |
-| Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/mfg26d/26D-mfg-wn-f50333.htm#mfg26d-f50333) | None | Setup Required |
 
 ## Order Management What's New 26D
 
@@ -408,56 +281,6 @@ _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00
 | Sales and Operations Planning | [Use parent levels for plan items in plan options for category level plans](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50209.htm#sop26d-f50209) | Small scale | None |
 | Sales and Operations Planning | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50275.htm#sop26d-f50275) | Small scale | None |
 
-## Self Service Procurement What's New 26D
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| Common Procurement | [Configure procurement business functions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f49538.htm#ssproc26d-f49538) | None | Opt In plus Setup |
-| Common Procurement | [Create intake requests for procurement contracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50314.htm#ssproc26d-f50314) | Small scale | Potential Setup |
-| Common Procurement | [Intake Request Creation Assistant - Create and review with enhanced features](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50312.htm#ssproc26d-f50312) | None | Setup Required |
-| Common Procurement | [Integrate and extend procurement using REST resources](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50411.htm#ssproc26d-f50411) | None | REST APIs |
-| Common Procurement | [Manage outcome document mappings for intake requests](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50313.htm#ssproc26d-f50313) | None | Setup Required |
-| Common Procurement | [Enhance lifecycle management for intake requests](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50315.htm#ssproc26d-f50315) | Small scale | None |
-| Self Service Procurement | [Display detailed error messages in requisition approvals](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47410.htm#ssproc26d-f47410) | Small scale | Potential Setup |
-| Self Service Procurement | [Manage catalog administration tasks using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47406.htm#ssproc26d-f47406) | Small scale | Potential Setup |
-| Self Service Procurement | [Manage catalogs](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47412.htm#ssproc26d-f47412) | Small scale | Potential Setup |
-| Self Service Procurement | [Manage content zones](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47401.htm#ssproc26d-f47401) | Small scale | Potential Setup |
-| Self Service Procurement | [Manage information templates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47403.htm#ssproc26d-f47403) | Small scale | Potential Setup |
-| Self Service Procurement | [Procurement Request Concierge](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50397.htm#ssproc26d-f50397) | Small scale | Potential Setup |
-| Self Service Procurement | [Purchase Requisition Creation Guide - Support multilingual interactions and display on-hand quantity for internal material transfers](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47411.htm#ssproc26d-f47411) | Small scale | Potential Setup |
-| Self Service Procurement | [Search for requesters and approvers using flexible keyword search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47402.htm#ssproc26d-f47402) | Small scale | Potential Setup |
-| Self Service Procurement | [Search for suppliers using a Contains search in requisitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f43316.htm#ssproc26d-f43316) | Small scale | Potential Setup |
-| Self Service Procurement | [Transfer items within the same organization for inventory destination requisitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47405.htm#ssproc26d-f47405) | None | Opt In |
-| Self Service Procurement | [Use extensibility capabilities](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50700.htm#ssproc26d-f50700) | Small scale | Potential Setup |
-| Self Service Procurement | [View billing details directly on requisition lines](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f49908.htm#ssproc26d-f49908) | Small scale | Potential Setup |
-| Self Service Procurement | [Save and reuse requisition searches](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47414.htm#ssproc26d-f47414) | Small scale | None |
-| Self Service Procurement | [Search and add charge account combinations when editing requisitions and purchase orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f49910.htm#ssproc26d-f49910) | Small scale | None |
-| Self Service Procurement | [Selected Self Service Procurement bug fixes in this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50701.htm#ssproc26d-f50701) | Small scale | None |
-| Self Service Procurement | [Use keyboard navigation for public shopping list line updates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f47413.htm#ssproc26d-f47413) | Small scale | None |
-| Supply Chain Orchestration | [Enable intra-organizational material transfers for transfer supply requests originating from Self Service Procurement](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50332.htm#ssproc26d-f50332) | None | Setup Required |
-| Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50330.htm#ssproc26d-f50330) | None | Setup Required |
-| Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50331.htm#ssproc26d-f50331) | None | Setup Required |
-| Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/ssproc26d/26D-ssproc-wn-f50333.htm#ssproc26d-f50333) | None | Setup Required |
-
-## Supply Chain Collaboration What's New 26D
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| Collaboration Messaging | [Derive supplier site from invoice account numbers](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50501.htm#sccv26d-f50501) | None | Setup Required |
-| Collaboration Messaging | [Receive Brazil electronic fiscal invoices for services and utilities](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50499.htm#sccv26d-f50499) | None | Setup Required |
-| Collaboration Messaging | [Receive a renewal quote from Oracle Subscription Management](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50497.htm#sccv26d-f50497) | None | Setup Required |
-| Collaboration Messaging | [Receive a sales contract from Oracle CPQ](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50498.htm#sccv26d-f50498) | None | Setup Required |
-| Collaboration Messaging | [Use Collaboration Messaging in Redwood experience with classic flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50500.htm#sccv26d-f50500) | None | Setup Required |
-| SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f51077.htm#sccv26d-f51077) | None | Opt In plus Setup |
-| Supply Chain Orchestration | [Enable intra-organizational material transfers for transfer supply requests originating from Self Service Procurement](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50332.htm#sccv26d-f50332) | None | Setup Required |
-| Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50330.htm#sccv26d-f50330) | None | Setup Required |
-| Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50331.htm#sccv26d-f50331) | None | Setup Required |
-| Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sccv26d/26D-sccv-wn-f50333.htm#sccv26d-f50333) | None | Setup Required |
-
 ## Supply Planning What's New 26D
 
 [Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/index.html)
@@ -500,94 +323,3 @@ _Generated from the current readiness snapshot (2026-09-13T15:20:17.083342+00:00
 | Supply Planning | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50226.htm#scp26d-f50226) | Small scale | None |
 | Supply Planning | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50275.htm#scp26d-f50275) | Small scale | None |
 | Supply Planning | [Work with plans during demand simulation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50195.htm#scp26d-f50195) | Small scale | None |
-
-## Transportation Management What's New 26C
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| 3D With Ground Schedules, Ground Consols and Ocean FCL Consols | [3D Packing For Ground Schedule and Ground and Ocean FCL Consols](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46515.htm#otm26c-f46515) | None | Setup Required |
-| 3D With Ground Schedules, Ground Consols and Ocean FCL Consols | [Use 3D Load Config for Ground Schedule and Consol](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47442.htm#otm26c-f47442) | None | Setup Required |
-| AI Agents | [AI Agent: Dock Scheduling Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46361.htm#otm26c-f46361) | None | Setup Required |
-| AI Agents | [AI Agent: Shipment Change Assistant](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49530.htm#otm26c-f49530) | None | Setup Required |
-| AI Infrastructure | [Slash Command for Prompt Selection](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49756.htm#otm26c-f49756) | None | Setup Required |
-| AI Infrastructure | [AI Agent Studio - Seeded Business Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49755.htm#otm26c-f49755) | Small scale | None |
-| BIP Authentication Changes | [Deprecate Basic Auth for BIP SOAP Web Service](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47435.htm#otm26c-f47435) | None | Setup Required |
-| BIP Authentication Changes | [OAuth Authentication for BI Publisher SOAP Report Services](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49400.htm#otm26c-f49400) | None | Setup Required |
-| Data Export API | [Export API - Delete Supported For Tender Collab Tables](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49639.htm#otm26c-f49639) | None | Setup Required |
-| Document Management | [REST API Custom Action to Add/Link a Document to Multiple Objects](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f43363.htm#otm26c-f43363) | None | Setup Required |
-| Document Management | [Planner Added Documents In Tendering Workflow](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46514.htm#otm26c-f46514) | Small scale | None |
-| Enhanced Workbench Improvements | [Single Transaction Option for Workbench Inline Editing and Mass Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49891.htm#otm26c-f49891) | None | Setup Required |
-| Enhanced Workbench Improvements | [Order Releases for Shipment Stop - Public Saved Query](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49557.htm#otm26c-f49557) | None | Setup Required |
-| Enhanced Workbench Improvements | [Inline Edit Always Shows External ID (XID)](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49641.htm#otm26c-f49641) | Small scale | None |
-| Enhanced Workbench Improvements | [Redwood Theme For Enhanced Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49885.htm#otm26c-f49885) | Small scale | None |
-| External Service Engine | [External Service Engine (ESE) Database Cache](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49742.htm#otm26c-f49742) | None | Setup Required |
-| Ground and Ocean FCL Consols | [Packing Fixed Option for Ocean FCL and Ground Consol Shipment Equipment](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47378.htm#otm26c-f47378) | None | Setup Required |
-| Logistics Network Modeling | [Child Table Support For Scenario Data Rules](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49765.htm#otm26c-f49765) | None | Setup Required |
-| Logistics Network Modeling | [Configurable Mapping Option for Early Pickup Date and Late Delivery Date](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49367.htm#otm26c-f49367) | None | Setup Required |
-| Logistics Network Modeling | [Copy Parameter Override](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46332.htm#otm26c-f46332) | Small scale | None |
-| Mobile | [Mobile Invoice Enhancements](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49354.htm#otm26c-f49354) | None | Setup Required |
-| Multi-stop Improvements | [Multi-Stop Petal Breakup to Retain Times, Equipment, and Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49723.htm#otm26c-f49723) | None | Setup Required |
-| Multi-stop Improvements | [Multi-stop Sequencing Stowaway](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49730.htm#otm26c-f49730) | None | Setup Required |
-| Multi-stop Improvements | [Petal Breakup with Capacity Limits](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49724.htm#otm26c-f49724) | None | Setup Required |
-| Open Tender and Online Booking/Tendering | [Automation Agent Actions - Shipment Group Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49507.htm#otm26c-f49507) | None | Setup Required |
-| Open Tender and Online Booking/Tendering | [Automation Agent Actions - Shipment Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49508.htm#otm26c-f49508) | None | Setup Required |
-| Open Tender and Online Booking/Tendering | [Open Tender - Service Provider Bid Increase Check](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46516.htm#otm26c-f46516) | None | Setup Required |
-| Operational Improvements | [Fetch All Shipment Tracking Events](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47436.htm#otm26c-f47436) | None | Setup Required |
-| Operational Improvements | [SMD Sync With Order On SSU Count Increase](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47438.htm#otm26c-f47438) | None | Setup Required |
-| Operational Improvements | [Suppress Error When No REST RIQ Results Found](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47439.htm#otm26c-f47439) | None | Setup Required |
-| Operational Improvements | [Use Improved Split Order Movement Action](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46318.htm#otm26c-f46318) | None | Setup Required |
-| REST Enabled Actions | [REST Enable Actions for Open Tender - Spot Bid Tender and Broadcast Tender](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49509.htm#otm26c-f49509) | None | Setup Required |
-| REST Enabled Actions | [REST Enabled Action - Change Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46517.htm#otm26c-f46517) | None | Setup Required |
-| REST Services | [Apply Custom Fetch Size on REST Child Resources](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47431.htm#otm26c-f47431) | None | Setup Required |
-| REST Services | [Enable Req Att Validation For REST API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46278.htm#otm26c-f46278) | None | Setup Required |
-| REST Services | [Honor Update Flag For REST RefNum Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f43369.htm#otm26c-f43369) | None | Setup Required |
-| REST Services | [Required Attribute Validation for REST Resource Creation and Updates](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47315.htm#otm26c-f47315) | None | Setup Required |
-| Redwood UI | [Try the New Redwood Experience](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f47313.htm#otm26c-f47313) | Larger scale | None |
-| Transportation Operational Intelligence | [Transportation Operational Intelligence (TOI) Event Lat/Long](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49361.htm#otm26c-f49361) | None | Setup Required |
-| Usability Enhancements | [Preferred Routing - Order Routing Rule](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46451.htm#otm26c-f46451) | None | Setup Required |
-| Usability Enhancements | [Multi-Day Calendar Overrides](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46348.htm#otm26c-f46348) | Small scale | None |
-| Usability Enhancements | [Rate Shopping - Rate Service Visibility - Change Service Provider](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f46452.htm#otm26c-f46452) | Small scale | None |
-| XML Integrations | [Enable Friendly XML Schema Validation Messages](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/otm26c/26C-otm-wn-f49483.htm#otm26c-f49483) | None | Setup Required |
-
-## Warehouse Management What's New 26C
-
-[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/index.html)
-
-| Area | Feature | Impact | Action to Enable |
-|---|---|---|---|
-| Cloud SCM Integration | [Enhancements to Reconciliation Workbench](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50167.htm#wms26c-f50167) | None | Setup Required |
-| Inbound Logistics | [Enhancements to Create LPN for Pallet Handling](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50165.htm#wms26c-f50165) | None | Setup Required |
-| Inbound Logistics | [Locate Received LPNs During Receive Entire Shipment](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50595.htm#wms26c-f50595) | None | Setup Required |
-| Inbound Logistics | [Print Item Labels using an API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f47383.htm#wms26c-f47383) | None | REST APIs |
-| Inbound Logistics | [Support for Destination LPN Retention during Split Inbound LPN](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50170.htm#wms26c-f50170) | None | Setup Required |
-| Inbound Logistics | [Improve Receiving Execution with Shipment Progress Visibility in Mobile](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50590.htm#wms26c-f50590) | Small scale | None |
-| Inventory Operations | [AI Agent: Inventory Expiry Assistant - Enhanced Execution Controls](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f47380.htm#wms26c-f47380) | None | Setup Required |
-| Inventory Operations | [Cancel Picking Allocations Only from Wave Inquiry](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50174.htm#wms26c-f50174) | None | Setup Required |
-| Inventory Operations | [Enhanced Configuration for Managing Multiple Wave Instances](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49717.htm#wms26c-f49717) | None | Setup Required |
-| Inventory Operations | [Honor Expiry Date Range Rules for Cross Dock](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50160.htm#wms26c-f50160) | None | Setup Required |
-| Inventory Operations | [Improvements to Assign Load with Auto-Generated Load Number](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50168.htm#wms26c-f50168) | None | Setup Required |
-| Inventory Operations | [Support Selective Approval of CC Adjustment Detail Records](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49714.htm#wms26c-f49714) | None | Setup Required |
-| Inventory Operations | [Updates to Modify Item Quantity API Inventory History Transaction](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50164.htm#wms26c-f50164) | None | REST APIs |
-| Inventory Operations | [Honor Expiry Date Range Rules for Cross Dock Pick And Allocate](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50402.htm#wms26c-f50402) | Small scale | None |
-| Inventory Operations | [Honor Expiry Date Range Rules for Direct Allocation](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50401.htm#wms26c-f50401) | Small scale | None |
-| Inventory Operations | [Honor Expiry Date Range, Order Prioritization Rules for Distribute LPN](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50161.htm#wms26c-f50161) | Small scale | None |
-| Outbound Logistics | [Apply Default Lock Code for Inventory Discrepancy in Outbound Audit](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50166.htm#wms26c-f50166) | None | Setup Required |
-| Outbound Logistics | [Assign and Unassign Orders from Outbound Load Number Orders](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50175.htm#wms26c-f50175) | None | Setup Required |
-| Outbound Logistics | [Cancel Picking Allocations only for a Replenishment with Picking Wave](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49718.htm#wms26c-f49718) | None | Setup Required |
-| Outbound Logistics | [Enhance Queries for Wave Research Advisor AI Agent](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50053.htm#wms26c-f50053) | Small scale | Potential Setup |
-| Outbound Logistics | [Improvements to Combine Outbound LPN supporting ‘Extra Item Property Display’](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50171.htm#wms26c-f50171) | None | Setup Required |
-| Outbound Logistics | [Print Location Labels using an API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49716.htm#wms26c-f49716) | None | REST APIs |
-| Outbound Logistics | [Support Substitution and Shorting in Pallet Move Auto Pack Task](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50163.htm#wms26c-f50163) | None | Setup Required |
-| Outbound Logistics | [Support Substitution for Allocation UOM for Case/Pack in Pack NC Active](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49715.htm#wms26c-f49715) | None | Setup Required |
-| Outbound Logistics | [Support task_nbr parameter in Pick Confirm API](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50173.htm#wms26c-f50173) | None | REST APIs |
-| Outbound Logistics | [UPS Standard Integration Supports Shipping to Canada](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50178.htm#wms26c-f50178) | Small scale | None |
-| Redwood Mobile WMS | [Enhancements to Redwood Mobile](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50399.htm#wms26c-f50399) | None | Setup Required |
-| WMS Common | [Continued Redwood Migration for Web UI](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49713.htm#wms26c-f49713) | None | Setup Required |
-| WMS Common | [Email Address Endpoints in Endpoint Configuration](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50177.htm#wms26c-f50177) | None | Setup Required |
-| WMS Common | [Enhancement to Framework Log UI](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50176.htm#wms26c-f50176) | None | Setup Required |
-| WMS Common | [Improvements to Get API Support](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50172.htm#wms26c-f50172) | None | REST APIs |
-| WMS Common | [Introduce Configuration Migration Pack](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f49972.htm#wms26c-f49972) | None | Setup Required |
-| WMS Common | [Print Label Support to LPN Inquiry and RF Pallet Inquiry](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50169.htm#wms26c-f50169) | None | Setup Required |
-| Warehouse Workforce Management | [View Employee Timeline Metrics](https://docs.oracle.com/en/cloud/saas/readiness/logistics/26c/wms26c/26C-wms-wn-f50162.htm#wms26c-f50162) | Small scale | Potential Setup |
