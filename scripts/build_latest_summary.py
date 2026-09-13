@@ -116,8 +116,6 @@ def main() -> int:
 
     if os.environ.get("DEBUG_ZERO_MODULES"):
         zero_titles = {
-            "Global Trade Management What's New 26C",
-            "Transportation Management What's New 26C",
             "Warehouse Management What's New 26C",
         }
         for item in modules:
@@ -139,6 +137,8 @@ def main() -> int:
                     f"has_table={bool(table)} next={href!r}",
                     file=sys.stderr,
                 )
+                if title and title.get_text(strip=True) == "Feature Summary":
+                    print(f"DEBUG {item['title']}: Feature Summary page body:\n{soup.prettify()[:6000]}", file=sys.stderr)
                 if table or not href:
                     break
                 url = urljoin(url, href)
