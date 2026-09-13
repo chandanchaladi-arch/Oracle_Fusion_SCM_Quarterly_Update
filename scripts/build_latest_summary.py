@@ -2,6 +2,13 @@
 """One-off: build a human-readable summary of the current-quarter SCM
 readiness pages (the latest release per module) into a Markdown file.
 
+Each module's "What's New" page is the first page of a multi-page
+Oracle Help Center "book" (index -> revision history -> feature summary
+-> individual feature topics). The feature summary page a few hops in
+has a table (class "fsModule") listing every feature for the release,
+which is what this pulls out — walking every individual feature topic
+page per module would be far larger than a summary needs.
+
 This is a manual/ad-hoc reporting tool, separate from the daily diff
 checker (check_scm_updates.py). Run via workflow_dispatch on
 build-latest-summary.yml.
@@ -14,6 +21,7 @@ import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -29,6 +37,7 @@ REQUEST_HEADERS = {
     )
 }
 REQUEST_TIMEOUT = 30
+MAX_HOPS = 6
 
 MODULE_RE = re.compile(r"/(scm|logistics|common)/(\d\d[a-d])/([a-z]+?)(\d\d[a-d])/index\.html")
 
@@ -61,61 +70,47 @@ def latest_per_module(items: list[dict]) -> list[dict]:
     return latest
 
 
-def extract_page_summary(html: str) -> dict:
-    soup = BeautifulSoup(html, "html.parser")
-    main = soup.find(id="main") or soup.find("main") or soup.body
+def find_feature_table(start_url: str) -> tuple[BeautifulSoup, str] | tuple[None, None]:
+    """Walk the book's "next" chain until the feature-summary table appears."""
+    url = start_url
+    for _ in range(MAX_HOPS):
+        html = fetch(url)
+        if not html:
+            return None, None
+        soup = BeautifulSoup(html, "html.parser")
+        table = soup.find("table", class_="fsModule")
+        if table:
+            return table, url
+        nxt = soup.find("link", rel="next")
+        href = nxt["href"] if nxt and nxt.get("href") else None
+        if not href:
+            return None, None
+        url = urljoin(url, href)
+    return None, None
 
-    intro = ""
-    for p in main.find_all("p"):
-        text = p.get_text(strip=True)
-        if len(text) > 60:
-            intro = text
-            break
 
-    features = []
-    for heading in main.find_all(["h2", "h3"]):
-        text = heading.get_text(strip=True)
-        if text and text.lower() not in {"summary of features", "give us feedback"}:
-            features.append(text)
-
-    return {"intro": intro, "features": features}
+def parse_feature_rows(table, page_url: str) -> list[dict]:
+    rows = []
+    for tr in table.find("tbody").find_all("tr"):
+        cells = tr.find_all("td")
+        if len(cells) < 5:
+            continue
+        module, feature_cell, tags_cell, impact, action = cells[:5]
+        link = feature_cell.find("a")
+        rows.append(
+            {
+                "module": module.get_text(strip=True),
+                "feature": feature_cell.get_text(strip=True),
+                "feature_url": urljoin(page_url, link["href"]) if link and link.get("href") else None,
+                "tags": tags_cell.get_text(" ", strip=True),
+                "impact": impact.get_text(strip=True),
+                "action": action.get_text(strip=True),
+            }
+        )
+    return rows
 
 
 def main() -> int:
-    if os.environ.get("DEBUG_SCRAPE"):
-        # print raw structure for the first module page AND its "next" page
-        state = json.loads(STATE_PATH.read_text())
-        sample = latest_per_module(state["items"])[0]
-        html = fetch(sample["url"])
-        if html:
-            soup = BeautifulSoup(html, "html.parser")
-            print(f"DEBUG sample url: {sample['url']}", file=sys.stderr)
-            next_link = soup.find("link", rel="next")
-            next_href = next_link["href"] if next_link and next_link.get("href") else None
-            print(f"DEBUG next href: {next_href!r}", file=sys.stderr)
-            url = sample["url"]
-            href = next_href
-            for hop in range(4):
-                if not href:
-                    break
-                url = requests.compat.urljoin(url, href)
-                html = fetch(url)
-                if not html:
-                    break
-                soup = BeautifulSoup(html, "html.parser")
-                title = soup.find("title")
-                h1 = soup.find(["h1", "h2"])
-                print(
-                    f"DEBUG hop {hop}: {url} title={title.get_text(strip=True) if title else None!r} "
-                    f"heading={h1.get_text(strip=True) if h1 else None!r}",
-                    file=sys.stderr,
-                )
-                if hop == 2:
-                    print(soup.prettify()[:8000], file=sys.stderr)
-                nxt = soup.find("link", rel="next")
-                href = nxt["href"] if nxt and nxt.get("href") else None
-        return 0
-
     state = json.loads(STATE_PATH.read_text())
     modules = latest_per_module(state["items"])
     print(f"Building summary for {len(modules)} current-release modules")
@@ -127,25 +122,30 @@ def main() -> int:
         "",
     ]
     for item in modules:
-        html = fetch(item["url"])
         sections.append(f"## {item['title']}")
         sections.append("")
-        sections.append(f"[{item['url']}]({item['url']})")
+        sections.append(f"[Full documentation]({item['url']})")
         sections.append("")
-        if html:
-            info = extract_page_summary(html)
-            if info["intro"]:
-                sections.append(info["intro"])
-                sections.append("")
-            if info["features"]:
-                sections.append("**New/changed features:**")
-                sections.append("")
-                for feat in info["features"]:
-                    sections.append(f"- {feat}")
-                sections.append("")
-        else:
-            sections.append("_Could not fetch page content._")
+
+        table, page_url = find_feature_table(item["url"])
+        if not table:
+            sections.append("_Could not locate the feature summary table for this module._")
             sections.append("")
+            continue
+
+        rows = parse_feature_rows(table, page_url)
+        print(f"  {item['title']}: {len(rows)} feature(s)")
+        if not rows:
+            sections.append("_No features listed._")
+            sections.append("")
+            continue
+
+        sections.append("| Area | Feature | Impact | Action to Enable |")
+        sections.append("|---|---|---|---|")
+        for row in rows:
+            feature_text = f"[{row['feature']}]({row['feature_url']})" if row["feature_url"] else row["feature"]
+            sections.append(f"| {row['module']} | {feature_text} | {row['impact']} | {row['action']} |")
+        sections.append("")
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text("\n".join(sections))
