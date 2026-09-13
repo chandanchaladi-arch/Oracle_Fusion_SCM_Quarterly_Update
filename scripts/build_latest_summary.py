@@ -78,7 +78,9 @@ def find_feature_table(start_url: str) -> tuple[BeautifulSoup, str] | tuple[None
         if not html:
             return None, None
         soup = BeautifulSoup(html, "html.parser")
-        table = soup.find("table", class_="fsModule")
+        # "fsModule" is an extra class on some books (common/SCM); logistics
+        # books only carry "rfs_table" on the same table, so match on that.
+        table = soup.find("table", class_="rfs_table")
         if table:
             return table, url
         nxt = soup.find("link", rel="next")
@@ -89,22 +91,49 @@ def find_feature_table(start_url: str) -> tuple[BeautifulSoup, str] | tuple[None
     return None, None
 
 
+COLUMN_ALIASES = {
+    "module": "module",
+    "feature": "feature",
+    "tags": "tags",
+    "impact to existing processes": "impact",
+    "impact": "impact",
+    "action to enable": "action",
+    "action": "action",
+}
+
+
+def header_index_map(table) -> dict[str, int]:
+    """Map logical column names to their position, since the table's exact
+    column set varies between books (e.g. logistics tables omit "Tags")."""
+    header_cells = table.find("thead").find_all("th")
+    index_map = {}
+    for i, th in enumerate(header_cells):
+        key = COLUMN_ALIASES.get(th.get_text(strip=True).lower())
+        if key:
+            index_map[key] = i
+    return index_map
+
+
 def parse_feature_rows(table, page_url: str) -> list[dict]:
+    index_map = header_index_map(table)
+    if "module" not in index_map or "feature" not in index_map:
+        return []
+
     rows = []
     for tr in table.find("tbody").find_all("tr"):
         cells = tr.find_all("td")
-        if len(cells) < 5:
+        if len(cells) <= max(index_map.values()):
             continue
-        module, feature_cell, tags_cell, impact, action = cells[:5]
+        feature_cell = cells[index_map["feature"]]
         link = feature_cell.find("a")
         rows.append(
             {
-                "module": module.get_text(strip=True),
+                "module": cells[index_map["module"]].get_text(strip=True),
                 "feature": feature_cell.get_text(strip=True),
                 "feature_url": urljoin(page_url, link["href"]) if link and link.get("href") else None,
-                "tags": tags_cell.get_text(" ", strip=True),
-                "impact": impact.get_text(strip=True),
-                "action": action.get_text(strip=True),
+                "tags": cells[index_map["tags"]].get_text(" ", strip=True) if "tags" in index_map else "",
+                "impact": cells[index_map["impact"]].get_text(strip=True) if "impact" in index_map else "",
+                "action": cells[index_map["action"]].get_text(strip=True) if "action" in index_map else "",
             }
         )
     return rows
@@ -113,36 +142,6 @@ def parse_feature_rows(table, page_url: str) -> list[dict]:
 def main() -> int:
     state = json.loads(STATE_PATH.read_text())
     modules = latest_per_module(state["items"])
-
-    if os.environ.get("DEBUG_ZERO_MODULES"):
-        zero_titles = {
-            "Warehouse Management What's New 26C",
-        }
-        for item in modules:
-            if item["title"] not in zero_titles:
-                continue
-            url = item["url"]
-            for hop in range(MAX_HOPS + 2):
-                html = fetch(url)
-                if not html:
-                    print(f"DEBUG {item['title']}: hop {hop} fetch failed for {url}", file=sys.stderr)
-                    break
-                soup = BeautifulSoup(html, "html.parser")
-                table = soup.find("table", class_="fsModule")
-                title = soup.find("title")
-                nxt = soup.find("link", rel="next")
-                href = nxt["href"] if nxt and nxt.get("href") else None
-                print(
-                    f"DEBUG {item['title']}: hop {hop} url={url} title={title.get_text(strip=True) if title else None!r} "
-                    f"has_table={bool(table)} next={href!r}",
-                    file=sys.stderr,
-                )
-                if title and title.get_text(strip=True) == "Feature Summary":
-                    print(f"DEBUG {item['title']}: Feature Summary page body:\n{soup.prettify()[:6000]}", file=sys.stderr)
-                if table or not href:
-                    break
-                url = urljoin(url, href)
-        return 0
 
     print(f"Building summary for {len(modules)} current-release modules")
 
