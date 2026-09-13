@@ -1,0 +1,65 @@
+name: Daily Oracle Fusion SCM Update Check
+
+on:
+  schedule:
+    # 06:00 UTC every day
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-scm-update
+  cancel-in-progress: false
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Check for Oracle Fusion SCM readiness updates
+        id: check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/check_scm_updates.py
+
+      - name: Commit updated snapshot and report
+        if: steps.check.outputs.changes_found == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json updates/ CHANGELOG.md
+          git commit -m "Daily SCM readiness check: ${{ steps.check.outputs.new_item_count }} new page(s) on $(date -u +'%Y-%m-%d')"
+          git push
+
+      - name: Ensure label exists
+        if: steps.check.outputs.changes_found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "oracle-scm-update" \
+            --color BFD4F2 \
+            --description "Automated Oracle Fusion SCM readiness update" \
+            --force
+
+      - name: Open GitHub issue with summary
+        if: steps.check.outputs.changes_found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Oracle Fusion SCM updates - $(date -u +'%Y-%m-%d') (${{ steps.check.outputs.new_item_count }} new)" \
+            --body-file "${{ steps.check.outputs.summary_file }}" \
+            --label "oracle-scm-update"
