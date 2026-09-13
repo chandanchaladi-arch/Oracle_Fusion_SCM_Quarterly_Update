@@ -51,6 +51,11 @@ def fetch(url: str) -> str | None:
     try:
         resp = requests.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
+        # Oracle's server doesn't send a charset in the Content-Type header,
+        # so requests falls back to ISO-8859-1 and mangles UTF-8 punctuation
+        # (e.g. "Here's" -> "Hereâ€™s"). Fall back to the sniffed encoding.
+        if resp.encoding is None or resp.encoding.lower() == "iso-8859-1":
+            resp.encoding = resp.apparent_encoding
         if os.environ.get("DEBUG_SCRAPE"):
             print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
         return resp.text
