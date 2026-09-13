@@ -56,6 +56,13 @@ def fetch(url: str) -> str | None:
     try:
         resp = requests.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
+        if os.environ.get("DEBUG_SCRAPE"):
+            soup = BeautifulSoup(resp.text, "html.parser")
+            all_links = soup.find_all("a", href=True)
+            print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
+            print(f"DEBUG {url}: total <a> tags={len(all_links)}", file=sys.stderr)
+            print(f"DEBUG {url}: sample hrefs={[a['href'] for a in all_links[:40]]}", file=sys.stderr)
+            print(f"DEBUG {url}: body head=\n{resp.text[:2000]}", file=sys.stderr)
         return resp.text
     except requests.RequestException as exc:
         print(f"WARNING: failed to fetch {url}: {exc}", file=sys.stderr)

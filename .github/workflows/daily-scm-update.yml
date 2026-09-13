@@ -4,7 +4,12 @@ on:
   schedule:
     # 06:00 UTC every day
     - cron: "0 6 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Print raw fetch diagnostics (status, link counts, HTML sample) to the run log"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,6 +38,7 @@ jobs:
         id: check
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DEBUG_SCRAPE: ${{ github.event.inputs.debug }}
         run: python scripts/check_scm_updates.py
 
       - name: Commit updated snapshot and report
