@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -39,10 +38,6 @@ SOURCES = [
     },
 ]
 
-# Oracle publishes per-module "What's New" pages under this path pattern,
-# e.g. /en/cloud/saas/readiness/scm/26c/scp26c/index.html
-MODULE_LINK_PATTERN = re.compile(r"/readiness/scm/", re.IGNORECASE)
-
 REQUEST_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (compatible; OracleFusionSCMUpdateBot/1.0; "
@@ -57,14 +52,7 @@ def fetch(url: str) -> str | None:
         resp = requests.get(url, headers=REQUEST_HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         if os.environ.get("DEBUG_SCRAPE"):
-            soup = BeautifulSoup(resp.text, "html.parser")
-            all_links = soup.find_all("a", href=True)
             print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
-            print(f"DEBUG {url}: total <a> tags={len(all_links)}", file=sys.stderr)
-            for a in all_links:
-                if "scp26c/index.html" in a["href"] or "scp26d/index.html" in a["href"]:
-                    row = a.find_parent("tr") or a.find_parent("li") or a.parent
-                    print(f"DEBUG ROW HTML around {a['href']!r}:\n{row.prettify()}", file=sys.stderr)
         return resp.text
     except requests.RequestException as exc:
         print(f"WARNING: failed to fetch {url}: {exc}", file=sys.stderr)
@@ -72,16 +60,32 @@ def fetch(url: str) -> str | None:
 
 
 def extract_module_links(html: str, base_url: str, source_name: str) -> dict[str, dict]:
+    """Extract readiness entries from Oracle's help-center "book" cards.
+
+    Each entry on the page is a `<div class="book">` containing a `.h4`
+    title (e.g. "Supply Planning What's New 26C") and one or more format
+    links (HTML/PDF) whose visible text is just the format name.
+    """
     soup = BeautifulSoup(html, "html.parser")
     items: dict[str, dict] = {}
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if not MODULE_LINK_PATTERN.search(href):
-            continue
-        absolute_url = urljoin(base_url, href)
-        title = a.get_text(strip=True)
+    for book in soup.select("div.book"):
+        title_el = book.select_one(".h4")
+        title = title_el.get_text(strip=True) if title_el else None
         if not title:
             continue
+
+        chosen_href = None
+        for a in book.find_all("a", href=True):
+            if a.get_text(strip=True).upper() == "HTML":
+                chosen_href = a["href"]
+                break
+        if not chosen_href:
+            first_link = book.find("a", href=True)
+            chosen_href = first_link["href"] if first_link else None
+        if not chosen_href:
+            continue
+
+        absolute_url = urljoin(base_url, chosen_href)
         items[absolute_url] = {
             "id": absolute_url,
             "title": title,
