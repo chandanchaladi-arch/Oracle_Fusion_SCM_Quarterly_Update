@@ -61,8 +61,8 @@ def fetch(url: str) -> str | None:
             all_links = soup.find_all("a", href=True)
             print(f"DEBUG {url}: status={resp.status_code} length={len(resp.text)}", file=sys.stderr)
             print(f"DEBUG {url}: total <a> tags={len(all_links)}", file=sys.stderr)
-            print(f"DEBUG {url}: sample hrefs={[a['href'] for a in all_links[:40]]}", file=sys.stderr)
-            print(f"DEBUG {url}: body head=\n{resp.text[:2000]}", file=sys.stderr)
+            for a in all_links:
+                print(f"DEBUG LINK href={a['href']!r} text={a.get_text(strip=True)!r}", file=sys.stderr)
         return resp.text
     except requests.RequestException as exc:
         print(f"WARNING: failed to fetch {url}: {exc}", file=sys.stderr)
