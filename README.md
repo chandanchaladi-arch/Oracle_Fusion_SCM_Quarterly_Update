@@ -54,6 +54,20 @@ checker only reports future changes). It writes
 release across the tracked modules, and also sends a condensed digest +
 that file to Telegram if configured.
 
+## On-demand via Telegram ("send hi for an update")
+
+A third workflow — **Telegram On-Demand Update**
+(`.github/workflows/telegram-on-demand.yml`) — polls Telegram every 5
+minutes (GitHub Actions' practical minimum for scheduled workflows; it
+isn't instant like a live chatbot) for a message from you containing one
+of: `hi`, `hello`, `hey`, `update`, `status`, `/start`, `/update`. If it
+sees one, it rebuilds the summary fresh and replies to whichever chat
+sent it, the same digest + attached report as the on-demand workflow
+above. The last processed message is tracked in
+`data/telegram_offset.json` so the same message never gets two replies.
+This only needs `TELEGRAM_BOT_TOKEN` (not the chat ID secret, since it
+replies to whoever messaged it) and no-ops if that secret isn't set.
+
 ## AI-written summaries (optional)
 
 If you add an `ANTHROPIC_API_KEY` repository secret (**Settings → Secrets
@@ -91,17 +105,20 @@ Telegram send." and continue normally (GitHub issue/commit still happen).
 ## Repository layout
 
 ```
-.github/workflows/daily-scm-update.yml      # daily cron + manual trigger
-.github/workflows/build-latest-summary.yml  # on-demand full current-release summary
-scripts/check_scm_updates.py                # fetch, diff, summarize, report
-scripts/build_latest_summary.py             # on-demand full current-release summary
-scripts/send_telegram.py                    # Telegram Bot API delivery
-scripts/module_scope.py                     # which SCM modules are tracked
-scripts/requirements.txt                    # Python dependencies
-data/state.json                             # last-known snapshot (auto-updated)
-updates/YYYY-MM-DD.md                       # one report per day with changes
-docs/Latest_SCM_Update_Summary.md           # full current-release summary (on demand)
-CHANGELOG.md                                # running index of update days
+.github/workflows/daily-scm-update.yml       # daily cron + manual trigger
+.github/workflows/build-latest-summary.yml   # on-demand full current-release summary
+.github/workflows/telegram-on-demand.yml     # poll Telegram, reply to "hi" etc.
+scripts/check_scm_updates.py                 # fetch, diff, summarize, report
+scripts/build_latest_summary.py              # on-demand full current-release summary
+scripts/telegram_on_demand.py                # poll + reply logic
+scripts/send_telegram.py                     # Telegram Bot API delivery
+scripts/module_scope.py                      # which SCM modules are tracked
+scripts/requirements.txt                     # Python dependencies
+data/state.json                              # last-known snapshot (auto-updated)
+data/telegram_offset.json                    # last Telegram message processed (auto-updated)
+updates/YYYY-MM-DD.md                        # one report per day with changes
+docs/Latest_SCM_Update_Summary.md            # full current-release summary (on demand)
+CHANGELOG.md                                 # running index of update days
 ```
 
 ## Running it locally
