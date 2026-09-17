@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Daily check for new Oracle Fusion Cloud SCM readiness / What's New pages.
+"""Daily check for new Oracle Fusion Cloud readiness / What's New pages.
 
-Fetches Oracle's public Cloud Applications Readiness pages for the Supply
-Chain & Manufacturing (SCM) pillar, diffs the list of module "What's New"
-pages against the last known snapshot (data/state.json), and — when new
-pages have appeared — writes a dated Markdown report to updates/ and an
-entry to CHANGELOG.md.
+Fetches Oracle's public Cloud Applications Readiness pages for the SCM
+and ERP pillars, diffs the list of module "What's New" pages against the
+last known snapshot (data/state.json), and — when new pages have
+appeared — writes a dated Markdown report per category (SCM/Finance/PPM),
+opens a labeled GitHub issue per category, and sends each to Telegram if
+configured.
 
-Only tracks the modules in module_scope.py (Order Management, Procurement,
-Inventory Management, Product Lifecycle Management, and the planning
-family) — everything else Oracle publishes under SCM readiness is ignored.
+Only tracks the modules in module_scope.py — everything else Oracle
+publishes under these pillars is ignored. AI and Redwood are not module
+categories (they're feature-level tags), so they aren't covered by this
+daily module-level diff; see build_latest_summary.py for those.
 
 If ANTHROPIC_API_KEY is set, new items are additionally summarized into a
 short narrative using Claude; otherwise a plain bullet list is produced.
@@ -18,7 +20,9 @@ from __future__ import annotations
 
 import json
 import os
+import subprocess
 import sys
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -26,7 +30,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-from module_scope import is_tracked
+from module_scope import category_for_module, is_tracked
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE_PATH = ROOT / "data" / "state.json"
@@ -42,6 +46,14 @@ SOURCES = [
         "name": "SCM Readiness – All Releases (archive)",
         "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm-all.html",
     },
+    {
+        "name": "ERP Readiness – Current Release",
+        "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp.html",
+    },
+    {
+        "name": "ERP Readiness – All Releases (archive)",
+        "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp-all.html",
+    },
 ]
 
 REQUEST_HEADERS = {
@@ -51,6 +63,12 @@ REQUEST_HEADERS = {
     )
 }
 REQUEST_TIMEOUT = 30
+
+CATEGORY_LABELS = {
+    "SCM": "oracle-scm-update",
+    "Finance": "oracle-finance-update",
+    "PPM": "oracle-ppm-update",
+}
 
 
 def fetch(url: str) -> str | None:
@@ -102,6 +120,7 @@ def extract_module_links(html: str, base_url: str, source_name: str) -> dict[str
             "title": title,
             "url": absolute_url,
             "source": source_name,
+            "category": category_for_module(title),
         }
     return items
 
@@ -129,7 +148,7 @@ def save_state(items: dict[str, dict], checked_at: str) -> None:
     STATE_PATH.write_text(json.dumps(payload, indent=2) + "\n")
 
 
-def summarize_with_claude(new_items: list[dict]) -> str | None:
+def summarize_with_claude(category: str, new_items: list[dict]) -> str | None:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return None
@@ -145,12 +164,12 @@ def summarize_with_claude(new_items: list[dict]) -> str | None:
         for item in new_items
     )
     prompt = (
-        "You are summarizing newly published Oracle Fusion Cloud SCM (Supply "
-        "Chain & Manufacturing) readiness / \"What's New\" pages for a functional "
-        "and technical audience that supports an Oracle Fusion SCM implementation. "
-        "Group related items, call out the module/release each item belongs to, "
-        "and briefly note likely impact or why it matters. Be concise and use "
-        "Markdown bullet points. Do not invent details beyond what's given.\n\n"
+        f"You are summarizing newly published Oracle Fusion Cloud {category} "
+        "readiness / \"What's New\" pages for a functional and technical audience "
+        "that supports an Oracle Fusion implementation. Group related items, call "
+        "out the module/release each item belongs to, and briefly note likely "
+        "impact or why it matters. Be concise and use Markdown bullet points. "
+        "Do not invent details beyond what's given.\n\n"
         f"New/changed readiness pages found today:\n{bullet_source}"
     )
     try:
@@ -176,11 +195,11 @@ def plain_summary(new_items: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def write_report(date_str: str, new_items: list[dict], narrative: str | None) -> Path:
+def write_report(date_str: str, category: str, new_items: list[dict], narrative: str | None) -> Path:
     UPDATES_DIR.mkdir(parents=True, exist_ok=True)
-    report_path = UPDATES_DIR / f"{date_str}.md"
+    report_path = UPDATES_DIR / f"{date_str}-{category.lower()}.md"
     parts = [
-        f"# Oracle Fusion Cloud SCM – Readiness Updates for {date_str}",
+        f"# Oracle Fusion Cloud {category} — Readiness Updates for {date_str}",
         "",
         f"Found **{len(new_items)}** new/changed readiness page(s) since the previous check.",
         "",
@@ -192,21 +211,68 @@ def write_report(date_str: str, new_items: list[dict], narrative: str | None) ->
     return report_path
 
 
-CHANGELOG_TITLE = "# Changelog — Oracle Fusion Cloud SCM Readiness Updates\n"
+CHANGELOG_TITLE = "# Changelog — Oracle Fusion Cloud Readiness Updates\n"
 
 
-def update_changelog(date_str: str, count: int, report_path: Path) -> None:
+def update_changelog(date_str: str, category: str, count: int, report_path: Path) -> None:
     relative = report_path.relative_to(ROOT)
-    entry = f"- **{date_str}**: {count} new/changed SCM readiness page(s) — see [{relative}]({relative})\n"
+    entry = (
+        f"- **{date_str}** [{category}]: {count} new/changed readiness page(s) "
+        f"— see [{relative}]({relative})\n"
+    )
 
     existing_entries: list[str] = []
     if CHANGELOG_PATH.exists():
+        marker = f"**{date_str}** [{category}]"
         existing_entries = [
-            line for line in CHANGELOG_PATH.read_text().splitlines(keepends=True)
-            if line.startswith("- **") and not line.startswith(f"- **{date_str}**")
+            line
+            for line in CHANGELOG_PATH.read_text().splitlines(keepends=True)
+            if line.startswith("- **") and marker not in line
         ]
 
     CHANGELOG_PATH.write_text(CHANGELOG_TITLE + "\n" + entry + "".join(existing_entries))
+
+
+def ensure_label(label: str) -> None:
+    if not os.environ.get("GH_TOKEN"):
+        return
+    subprocess.run(
+        ["gh", "label", "create", label, "--color", "BFD4F2", "--description", "Automated Oracle readiness update", "--force"],
+        check=False,
+    )
+
+
+def open_issue(category: str, date_str: str, count: int, report_path: Path) -> None:
+    if not os.environ.get("GH_TOKEN"):
+        return
+    label = CATEGORY_LABELS.get(category, "oracle-readiness-update")
+    ensure_label(label)
+    subprocess.run(
+        [
+            "gh",
+            "issue",
+            "create",
+            "--title",
+            f"Oracle Fusion {category} updates - {date_str} ({count} new)",
+            "--body-file",
+            str(report_path),
+            "--label",
+            label,
+        ],
+        check=False,
+    )
+
+
+def send_to_telegram(report_path: Path) -> None:
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+    if not token or not chat_id:
+        return
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import send_telegram as st
+
+    text = report_path.read_text().strip()
+    st.send_message(token, chat_id, text)
 
 
 def set_output(name: str, value: str) -> None:
@@ -238,7 +304,7 @@ def main() -> int:
     is_first_run = previous_state.get("last_checked") is None and not previous_state.get("items")
     if is_first_run:
         print(
-            f"First run: baselining {len(current_items)} known SCM readiness page(s) "
+            f"First run: baselining {len(current_items)} known readiness page(s) "
             "without generating a report (nothing to compare against yet)."
         )
         save_state(current_items, checked_at)
@@ -246,27 +312,57 @@ def main() -> int:
         return 0
 
     previous_ids = {item["id"] for item in previous_state.get("items", [])}
-    new_ids = [item_id for item_id in current_items if item_id not in previous_ids]
+    previous_categories = {
+        cat for item in previous_state.get("items", []) if (cat := category_for_module(item["title"]))
+    }
+
+    new_ids = []
+    baselined_categories = set()
+    for item_id, item in current_items.items():
+        if item_id in previous_ids:
+            continue
+        category = item["category"]
+        if category and category not in previous_categories:
+            # This whole category is new to state.json (e.g. scope was just
+            # expanded to include it) -- baseline its current backlog
+            # silently rather than reporting years of history as "new."
+            baselined_categories.add(category)
+            continue
+        new_ids.append(item_id)
+
+    if baselined_categories:
+        print(
+            f"Silently baselining newly-tracked categor{'y' if len(baselined_categories) == 1 else 'ies'} "
+            f"({', '.join(sorted(baselined_categories))}) -- their existing pages won't be reported as new."
+        )
 
     if not new_ids:
-        print(f"No new SCM readiness pages found ({len(current_items)} tracked total).")
+        print(f"No new readiness pages found ({len(current_items)} tracked total).")
         save_state(current_items, checked_at)
         set_output("changes_found", "false")
         return 0
 
     new_items = [current_items[item_id] for item_id in new_ids]
-    print(f"Found {len(new_items)} new SCM readiness page(s):")
+    print(f"Found {len(new_items)} new readiness page(s):")
+    by_category: dict[str, list[dict]] = defaultdict(list)
     for item in new_items:
-        print(f"  - {item['title']} -> {item['url']}")
+        print(f"  - [{item['category']}] {item['title']} -> {item['url']}")
         item["description"] = fetch_description(item["url"])
+        by_category[item["category"]].append(item)
 
-    narrative = summarize_with_claude(new_items)
-    report_path = write_report(date_str, new_items, narrative)
-    update_changelog(date_str, len(new_items), report_path)
+    categories_with_changes = []
+    for category, items in by_category.items():
+        narrative = summarize_with_claude(category, items)
+        report_path = write_report(date_str, category, items, narrative)
+        update_changelog(date_str, category, len(items), report_path)
+        open_issue(category, date_str, len(items), report_path)
+        send_to_telegram(report_path)
+        categories_with_changes.append(category)
+
     save_state(current_items, checked_at)
 
     set_output("changes_found", "true")
-    set_output("summary_file", str(report_path.relative_to(ROOT)))
+    set_output("categories", ",".join(sorted(categories_with_changes)))
     set_output("new_item_count", str(len(new_items)))
     return 0
 

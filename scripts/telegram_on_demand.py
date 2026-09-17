@@ -22,8 +22,8 @@ import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 OFFSET_PATH = ROOT / "data" / "telegram_offset.json"
-SUMMARY_MD = ROOT / "docs" / "Latest_SCM_Update_Summary.md"
-SUMMARY_TXT = ROOT / "docs" / "Latest_SCM_Update_Summary_telegram.txt"
+DOCS_DIR = ROOT / "docs"
+CATEGORIES = ("SCM", "Finance", "PPM", "AI", "Redwood")
 
 TRIGGER_WORDS = {"hi", "hello", "hey", "update", "status", "/start", "/update"}
 API_BASE = "https://api.telegram.org/bot{token}/{method}"
@@ -84,7 +84,7 @@ def main() -> int:
         print("No trigger words in the new messages, nothing to reply to.")
         return 0
 
-    print(f"Rebuilding the summary for {len(triggered_chats)} chat(s) that asked for an update...")
+    print(f"Rebuilding the summaries for {len(triggered_chats)} chat(s) that asked for an update...")
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "build_latest_summary.py")], check=True
     )
@@ -92,12 +92,15 @@ def main() -> int:
     sys.path.insert(0, str(ROOT / "scripts"))
     import send_telegram as st
 
-    text = SUMMARY_TXT.read_text() if SUMMARY_TXT.exists() else "Summary unavailable right now."
     for chat_id in triggered_chats:
-        st.send_message(token, str(chat_id), text)
-        if SUMMARY_MD.exists():
-            st.send_document(token, str(chat_id), str(SUMMARY_MD), caption=SUMMARY_MD.name)
-    print(f"Replied to {len(triggered_chats)} chat(s).")
+        for category in CATEGORIES:
+            summary_md = DOCS_DIR / f"Latest_Update_Summary_{category}.md"
+            summary_txt = DOCS_DIR / f"Latest_Update_Summary_{category}_telegram.txt"
+            text = summary_txt.read_text() if summary_txt.exists() else f"{category} summary unavailable right now."
+            st.send_message(token, str(chat_id), text)
+            if summary_md.exists():
+                st.send_document(token, str(chat_id), str(summary_md), caption=summary_md.name)
+    print(f"Replied to {len(triggered_chats)} chat(s) with {len(CATEGORIES)} categories each.")
     return 0
 
 
