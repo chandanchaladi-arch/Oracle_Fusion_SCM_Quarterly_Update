@@ -1,4 +1,4 @@
-name: Daily Oracle Fusion SCM Update Check
+name: Daily Oracle Fusion Readiness Update Check
 
 on:
   schedule:
@@ -34,14 +34,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Check for Oracle Fusion SCM readiness updates
+      - name: Check for Oracle Fusion readiness updates (SCM/Finance/PPM)
         id: check
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DEBUG_SCRAPE: ${{ github.event.inputs.debug }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scripts/check_scm_updates.py
 
-      - name: Commit updated snapshot and report
+      - name: Commit updated snapshot and report(s)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -49,33 +52,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "Daily SCM readiness check: ${{ steps.check.outputs.new_item_count || 0 }} new page(s) on $(date -u +'%Y-%m-%d')"
+            git commit -m "Daily readiness check: ${{ steps.check.outputs.new_item_count || 0 }} new page(s) on $(date -u +'%Y-%m-%d') [${{ steps.check.outputs.categories }}]"
             git push
           fi
-
-      - name: Ensure label exists
-        if: steps.check.outputs.changes_found == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh label create "oracle-scm-update" \
-            --color BFD4F2 \
-            --description "Automated Oracle Fusion SCM readiness update" \
-            --force
-
-      - name: Open GitHub issue with summary
-        if: steps.check.outputs.changes_found == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue create \
-            --title "Oracle Fusion SCM updates - $(date -u +'%Y-%m-%d') (${{ steps.check.outputs.new_item_count }} new)" \
-            --body-file "${{ steps.check.outputs.summary_file }}" \
-            --label "oracle-scm-update"
-
-      - name: Send to Telegram
-        if: steps.check.outputs.changes_found == 'true'
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python scripts/send_telegram.py "${{ steps.check.outputs.summary_file }}"

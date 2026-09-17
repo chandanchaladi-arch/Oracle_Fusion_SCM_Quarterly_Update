@@ -21,25 +21,27 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Build summary
+      - name: Build summaries (SCM, Finance, PPM, AI, Redwood)
         run: python scripts/build_latest_summary.py
 
-      - name: Send to Telegram
+      - name: Send each category to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python scripts/send_telegram.py docs/Latest_SCM_Update_Summary_telegram.txt \
-            --document docs/Latest_SCM_Update_Summary.md
+          for category in SCM Finance PPM AI Redwood; do
+            python scripts/send_telegram.py "docs/Latest_Update_Summary_${category}_telegram.txt" \
+              --document "docs/Latest_Update_Summary_${category}.md"
+          done
 
-      - name: Commit summary
+      - name: Commit summaries
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/Latest_SCM_Update_Summary.md docs/Latest_SCM_Update_Summary_telegram.txt
+          git add docs/Latest_Update_Summary_*.md docs/Latest_Update_Summary_*_telegram.txt
           if git diff --cached --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "Rebuild latest SCM quarterly update summary"
+            git commit -m "Rebuild latest readiness summaries (SCM/Finance/PPM/AI/Redwood)"
             git push
           fi
