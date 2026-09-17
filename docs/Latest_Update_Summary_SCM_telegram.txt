@@ -1,0 +1,13 @@
+Oracle Fusion Cloud SCM — Latest Update Summary
+(2026-09-17)
+
+• Demand Management: 48 feature(s)
+• Inventory Management: 56 feature(s)
+• Order Management: 31 feature(s)
+• Procurement: 53 feature(s)
+• Product Lifecycle Management: 17 feature(s)
+• Sales and Operations Planning: 32 feature(s)
+• Supply Planning: 36 feature(s)
+
+Total: 273 feature(s) across 7 area(s).
+Full details attached.
