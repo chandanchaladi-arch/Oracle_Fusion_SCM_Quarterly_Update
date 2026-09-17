@@ -67,10 +67,18 @@ the daily checker and the summary tool import from there.
 3. **On-demand via Telegram** (`.github/workflows/telegram-on-demand.yml`):
    polls Telegram every 5 minutes (GitHub Actions' practical minimum for
    scheduled workflows — expect a few minutes' delay, not an instant reply)
-   for a message from you containing one of: `hi`, `hello`, `hey`,
-   `update`, `status`, `/start`, `/update`. If it sees one, it rebuilds all
-   five summaries fresh and replies to whichever chat sent it with all five
-   digests + attached reports. The last processed message is tracked in
+   for a message from you. Send one of `hi`, `hello`, `hey`, `update`,
+   `status`, `/start`, `/update` for **all five** categories, or send just
+   the category you want:
+   - `scm` → SCM
+   - `fin` or `finance` → Finance
+   - `ppm` → PPM
+   - `ai` → AI
+   - `redwood` → Redwood
+
+   Either way, it rebuilds all five summaries fresh (so the data is always
+   current) but only replies with the digest(s) + attached report(s) for
+   what was asked for. The last processed message is tracked in
    `data/telegram_offset.json` so the same message never gets two replies.
    Only needs `TELEGRAM_BOT_TOKEN` (not the chat ID secret, since it replies
    to whoever messaged it).

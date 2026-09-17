@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Reply with the current SCM summary when someone messages the bot.
+"""Reply with the requested category summary when someone messages the bot.
+
+Send "hi" (or hello/hey/update/status//start//update) for all five
+categories, or one of scm/fin/ppm/ai/redwood for just that category.
 
 There's no always-on server here to receive a real Telegram webhook, so
 this polls Telegram's getUpdates on a short interval instead (driven by
@@ -25,8 +28,25 @@ OFFSET_PATH = ROOT / "data" / "telegram_offset.json"
 DOCS_DIR = ROOT / "docs"
 CATEGORIES = ("SCM", "Finance", "PPM", "AI", "Redwood")
 
-TRIGGER_WORDS = {"hi", "hello", "hey", "update", "status", "/start", "/update"}
+TRIGGER_ALL = {"hi", "hello", "hey", "update", "status", "/start", "/update"}
+CATEGORY_TRIGGERS = {
+    "scm": "SCM",
+    "fin": "Finance",
+    "finance": "Finance",
+    "ppm": "PPM",
+    "ai": "AI",
+    "redwood": "Redwood",
+}
 API_BASE = "https://api.telegram.org/bot{token}/{method}"
+
+
+def categories_for_text(text: str) -> set[str] | None:
+    text = text.strip().lower()
+    if text in TRIGGER_ALL:
+        return set(CATEGORIES)
+    if text in CATEGORY_TRIGGERS:
+        return {CATEGORY_TRIGGERS[text]}
+    return None
 
 
 def load_offset() -> int:
@@ -68,15 +88,16 @@ def main() -> int:
         return 0
 
     max_update_id = offset
-    triggered_chats: set[int] = set()
+    triggered_chats: dict[int, set[str]] = {}
     for update in updates:
         max_update_id = max(max_update_id, update["update_id"])
         message = update.get("message") or update.get("edited_message")
         if not message or "text" not in message:
             continue
-        text = message["text"].strip().lower()
-        if text in TRIGGER_WORDS:
-            triggered_chats.add(message["chat"]["id"])
+        categories = categories_for_text(message["text"])
+        if categories:
+            chat_id = message["chat"]["id"]
+            triggered_chats.setdefault(chat_id, set()).update(categories)
 
     save_offset(max_update_id)
 
@@ -92,15 +113,17 @@ def main() -> int:
     sys.path.insert(0, str(ROOT / "scripts"))
     import send_telegram as st
 
-    for chat_id in triggered_chats:
+    for chat_id, categories in triggered_chats.items():
         for category in CATEGORIES:
+            if category not in categories:
+                continue
             summary_md = DOCS_DIR / f"Latest_Update_Summary_{category}.md"
             summary_txt = DOCS_DIR / f"Latest_Update_Summary_{category}_telegram.txt"
             text = summary_txt.read_text() if summary_txt.exists() else f"{category} summary unavailable right now."
             st.send_message(token, str(chat_id), text)
             if summary_md.exists():
                 st.send_document(token, str(chat_id), str(summary_md), caption=summary_md.name)
-    print(f"Replied to {len(triggered_chats)} chat(s) with {len(CATEGORIES)} categories each.")
+    print(f"Replied to {len(triggered_chats)} chat(s), each with their requested categories.")
     return 0
 
 
