@@ -1,509 +1,845 @@
 {
-  "last_checked": "2026-09-17T06:16:23.497760+00:00",
+  "last_checked": "2026-09-17T15:51:25.832906+00:00",
   "items": [
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/fins24a/index.html",
+      "title": "Financials What's New 24A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/fins24a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/ppm24a/index.html",
+      "title": "Project Management What's New 24A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/ppm24a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/ssfin24a/index.html",
+      "title": "Self Service Financials What's New 24A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24a/ssfin24a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/fins24b/index.html",
+      "title": "Financials What's New 24B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/fins24b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/ppm24b/index.html",
+      "title": "Project Management What's New 24B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/ppm24b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/ssfin24b/index.html",
+      "title": "Self Service Financials What's New 24B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24b/ssfin24b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/fins24c/index.html",
+      "title": "Financials What's New 24C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/fins24c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/ppm24c/index.html",
+      "title": "Project Management What's New 24C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/ppm24c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/ssfin24c/index.html",
+      "title": "Self Service Financials What's New 24C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24c/ssfin24c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/fins24d/index.html",
+      "title": "Financials What's New 24D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/fins24d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/ppm24d/index.html",
+      "title": "Project Management What's New 24D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/ppm24d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/ssfin24d/index.html",
+      "title": "Self Service Financials What's New 24D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/24d/ssfin24d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/fins25a/index.html",
+      "title": "Financials What's New 25A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/fins25a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/ppm25a/index.html",
+      "title": "Project Management What's New 25A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/ppm25a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/ssfin25a/index.html",
+      "title": "Self Service Financials What's New 25A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25a/ssfin25a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/fins25b/index.html",
+      "title": "Financials What's New 25B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/fins25b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/ppm25b/index.html",
+      "title": "Project Management What's New 25B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/ppm25b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/ssfin25b/index.html",
+      "title": "Self Service Financials What's New 25B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25b/ssfin25b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/fins25c/index.html",
+      "title": "Financials What's New 25C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/fins25c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/ppm25c/index.html",
+      "title": "Project Management What's New 25C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/ppm25c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/ssfin25c/index.html",
+      "title": "Self Service Financials What's New 25C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25c/ssfin25c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/fins25d/index.html",
+      "title": "Financials What's New 25D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/fins25d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/ppm25d/index.html",
+      "title": "Project Management What's New 25D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/ppm25d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/ssfin25d/index.html",
+      "title": "Self Service Financials What's New 25D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/25d/ssfin25d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/fins26a/index.html",
+      "title": "Financials What's New 26A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/fins26a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/ppm26a/index.html",
+      "title": "Project Management What's New 26A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/ppm26a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/ssfin26a/index.html",
+      "title": "Self Service Financials What's New 26A",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26a/ssfin26a/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/fins26b/index.html",
+      "title": "Financials What's New 26B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/fins26b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/ppm26b/index.html",
+      "title": "Project Management What's New 26B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/ppm26b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/ssfin26b/index.html",
+      "title": "Self Service Financials What's New 26B",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26b/ssfin26b/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/fins26c/index.html",
+      "title": "Financials What's New 26C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/fins26c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/ppm26c/index.html",
+      "title": "Project Management What's New 26C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/ppm26c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/ssfin26c/index.html",
+      "title": "Self Service Financials What's New 26C",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26c/ssfin26c/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/index.html",
+      "title": "Financials What's New 26D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ppm26d/index.html",
+      "title": "Project Management What's New 26D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ppm26d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "PPM"
+    },
+    {
+      "id": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ssfin26d/index.html",
+      "title": "Self Service Financials What's New 26D",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ssfin26d/index.html",
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "Finance"
+    },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/demand24a/index.html",
       "title": "Demand Management What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/demand24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/inv24a/index.html",
       "title": "Inventory Management What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/inv24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/order24a/index.html",
       "title": "Order Management What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/order24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/plm24a/index.html",
       "title": "Product Lifecycle Management What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/plm24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/proc24a/index.html",
       "title": "Procurement What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/proc24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/scp24a/index.html",
       "title": "Supply Planning What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/scp24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/sop24a/index.html",
       "title": "Sales and Operations Planning What's New 24A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24a/sop24a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/demand24b/index.html",
       "title": "Demand Management What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/demand24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/inv24b/index.html",
       "title": "Inventory Management What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/inv24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/order24b/index.html",
       "title": "Order Management What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/order24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/plm24b/index.html",
       "title": "Product Lifecycle Management What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/plm24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/proc24b/index.html",
       "title": "Procurement What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/proc24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/scp24b/index.html",
       "title": "Supply Planning What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/scp24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/sop24b/index.html",
       "title": "Sales and Operations Planning What's New 24B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24b/sop24b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/demand24c/index.html",
       "title": "Demand Management What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/demand24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/inv24c/index.html",
       "title": "Inventory Management What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/inv24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/order24c/index.html",
       "title": "Order Management What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/order24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/plm24c/index.html",
       "title": "Product Lifecycle Management What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/plm24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/proc24c/index.html",
       "title": "Procurement What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/proc24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/scp24c/index.html",
       "title": "Supply Planning What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/scp24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/sop24c/index.html",
       "title": "Sales and Operations Planning What's New 24C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24c/sop24c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/demand24d/index.html",
       "title": "Demand Management What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/demand24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/inv24d/index.html",
       "title": "Inventory Management What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/inv24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/order24d/index.html",
       "title": "Order Management What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/order24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/plm24d/index.html",
       "title": "Product Lifecycle Management What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/plm24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/proc24d/index.html",
       "title": "Procurement What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/proc24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/scp24d/index.html",
       "title": "Supply Planning What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/scp24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/sop24d/index.html",
       "title": "Sales and Operations Planning What's New 24D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/24d/sop24d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/demand25a/index.html",
       "title": "Demand Management What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/demand25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/inv25a/index.html",
       "title": "Inventory Management What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/inv25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/order25a/index.html",
       "title": "Order Management What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/order25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/plm25a/index.html",
       "title": "Product Lifecycle Management What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/plm25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/proc25a/index.html",
       "title": "Procurement What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/proc25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/scp25a/index.html",
       "title": "Supply Planning What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/scp25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/sop25a/index.html",
       "title": "Sales and Operations Planning What's New 25A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25a/sop25a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/demand25b/index.html",
       "title": "Demand Management What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/demand25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/inv25b/index.html",
       "title": "Inventory Management What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/inv25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/order25b/index.html",
       "title": "Order Management What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/order25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/plm25b/index.html",
       "title": "Product Lifecycle Management What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/plm25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/proc25b/index.html",
       "title": "Procurement What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/proc25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/scp25b/index.html",
       "title": "Supply Planning What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/scp25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/sop25b/index.html",
       "title": "Sales and Operations Planning What's New 25B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25b/sop25b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/demand25c/index.html",
       "title": "Demand Management What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/demand25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/inv25c/index.html",
       "title": "Inventory Management What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/inv25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/order25c/index.html",
       "title": "Order Management What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/order25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/index.html",
       "title": "Product Lifecycle Management What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/proc25c/index.html",
       "title": "Procurement What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/proc25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/scp25c/index.html",
       "title": "Supply Planning What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/scp25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/sop25c/index.html",
       "title": "Sales and Operations Planning What's New 25C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/sop25c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/demand25d/index.html",
       "title": "Demand Management What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/demand25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/inv25d/index.html",
       "title": "Inventory Management What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/inv25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/order25d/index.html",
       "title": "Order Management What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/order25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/plm25d/index.html",
       "title": "Product Lifecycle Management What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/plm25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/proc25d/index.html",
       "title": "Procurement What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/proc25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/scp25d/index.html",
       "title": "Supply Planning What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/scp25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/sop25d/index.html",
       "title": "Sales and Operations Planning What's New 25D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25d/sop25d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/demand26a/index.html",
       "title": "Demand Management What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/demand26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/inv26a/index.html",
       "title": "Inventory Management What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/inv26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/order26a/index.html",
       "title": "Order Management What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/order26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/plm26a/index.html",
       "title": "Product Lifecycle Management What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/plm26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/proc26a/index.html",
       "title": "Procurement What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/proc26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/scp26a/index.html",
       "title": "Supply Planning What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/scp26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/sop26a/index.html",
       "title": "Sales and Operations Planning What's New 26A",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26a/sop26a/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/demand26b/index.html",
       "title": "Demand Management What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/demand26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/inv26b/index.html",
       "title": "Inventory Management What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/inv26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/order26b/index.html",
       "title": "Order Management What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/order26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/plm26b/index.html",
       "title": "Product Lifecycle Management What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/plm26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/proc26b/index.html",
       "title": "Procurement What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/proc26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/scp26b/index.html",
       "title": "Supply Planning What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/scp26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/sop26b/index.html",
       "title": "Sales and Operations Planning What's New 26B",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26b/sop26b/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/demand26c/index.html",
       "title": "Demand Management What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/demand26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/inv26c/index.html",
       "title": "Inventory Management What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/inv26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/order26c/index.html",
       "title": "Order Management What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/order26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/plm26c/index.html",
       "title": "Product Lifecycle Management What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/plm26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/proc26c/index.html",
       "title": "Procurement What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/proc26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/scp26c/index.html",
       "title": "Supply Planning What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/scp26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/sop26c/index.html",
       "title": "Sales and Operations Planning What's New 26C",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26c/sop26c/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/index.html",
       "title": "Demand Management What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/index.html",
       "title": "Inventory Management What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/index.html",
       "title": "Order Management What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/index.html",
       "title": "Product Lifecycle Management What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/index.html",
       "title": "Procurement What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "ERP Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/index.html",
       "title": "Supply Planning What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     },
     {
       "id": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/index.html",
       "title": "Sales and Operations Planning What's New 26D",
       "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/index.html",
-      "source": "SCM Readiness \u2013 All Releases (archive)"
+      "source": "SCM Readiness \u2013 All Releases (archive)",
+      "category": "SCM"
     }
   ]
 }
