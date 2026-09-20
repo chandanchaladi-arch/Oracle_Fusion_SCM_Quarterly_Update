@@ -1,5 +1,5 @@
 Oracle Fusion Cloud Finance — Latest Update Summary
-(2026-09-17)
+(2026-09-20)
 
 • General Ledger: 0 feature(s)
 • Accounts Payable: 5 feature(s)
