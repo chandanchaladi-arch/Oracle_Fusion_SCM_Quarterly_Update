@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00)._
+_Generated from the current readiness snapshot (2026-09-26T06:15:14.751444+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -27,6 +27,7 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Cash Processing Agent | [Cash Processing Agent for bank statement reconciliation](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51246.htm#fins26d-f51246) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for cash positioning and improved liquidity](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51245.htm#fins26d-f51245) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for receipt processing and cash application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51477.htm#fins26d-f51477) | AI agent Redwood Platform | None | Setup Required |
+| Collections Agent | [Collector Workspace Agentic Application for enhanced collections actions](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51379.htm#fins26d-f51379) | Agentic app | None | Setup Required |
 | Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Setup Required |
 | Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Setup Required |
 | Integration & Extensibility | [Data Extraction Migration Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51362.htm#fins26d-f51362) | AI agent | None | Setup Required |

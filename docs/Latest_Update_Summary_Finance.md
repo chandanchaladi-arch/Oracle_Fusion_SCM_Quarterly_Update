@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Finance — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00)._
+_Generated from the current readiness snapshot (2026-09-26T06:15:14.751444+00:00)._
 
 ## Financials What's New 26D
 
@@ -23,6 +23,7 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Cash Processing Agent | Cash Management | [Cash Processing Agent for bank statement reconciliation](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51246.htm#fins26d-f51246) | None | Setup Required |
 | Cash Processing Agent | Cash Management | [Cash Processing Agent for cash positioning and improved liquidity](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51245.htm#fins26d-f51245) | None | Setup Required |
 | Cash Processing Agent | Cash Management | [Cash Processing Agent for receipt processing and cash application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51477.htm#fins26d-f51477) | None | Setup Required |
+| Collections Agent | Accounts Receivable | [Collector Workspace Agentic Application for enhanced collections actions](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51379.htm#fins26d-f51379) | None | Setup Required |
 | Manage Cash Activities and Operations | Cash Management | [Embedded Banking Services - Intraday bank statement processing](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51247.htm#fins26d-f51247) | None | Setup Required |
 | Manage Payment Configuration | Cash Management | [Automated Zengin master data upload for bulk maintenance of banks and bank branches in Japan](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51248.htm#fins26d-f51248) | Small scale | Potential Setup |
 | Payables Agent | Accounts Payable | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | None | Opt In |

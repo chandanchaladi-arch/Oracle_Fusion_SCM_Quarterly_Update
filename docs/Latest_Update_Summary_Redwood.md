@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00)._
+_Generated from the current readiness snapshot (2026-09-26T06:15:14.751444+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -26,7 +26,6 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Demand Management | [Migrate Classic page layouts to Redwood pages and page groups](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50221.htm#demand26d-f50221) | Redwood Platform | Small scale | None |
 | Demand Management | [Search the audit trail for measure-value updates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50200.htm#demand26d-f50200) | Redwood Platform Idea Lab | Small scale | None |
 | Demand Management | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50226.htm#demand26d-f50226) | Redwood Platform | Small scale | None |
-| Demand Management | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50275.htm#demand26d-f50275) | Redwood Platform | Small scale | None |
 | Demand Management | [Work with plans during demand simulation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50195.htm#demand26d-f50195) | Redwood Platform | Small scale | None |
 | Replenishment Planning | [Analyze planning results using a Supply Chain Network visualization](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50220.htm#demand26d-f50220) | Redwood Platform | Small scale | Potential Setup |
 | Replenishment Planning | [Collect demand history in the targeted mode by organization groups from the Oracle Fusion Cloud Applications Suite](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f45796.htm#demand26d-f45796) | Redwood Platform | None | Opt In |
@@ -110,7 +109,6 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Global Order Promising | [Manage sourcing assignments in a spreadsheet](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50216.htm#order26d-f50216) | Redwood Platform | None | Setup Required |
 | Global Order Promising | [Respect expiration dates of specific on-hand quantities in material reservations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50222.htm#order26d-f50222) | Redwood Platform | Small scale | Potential Setup |
 | Global Order Promising | [Respect minimum remaining shelf life material constraints in Order Promising](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50210.htm#order26d-f50210) | Redwood Platform Idea Lab | None | Opt In plus Setup |
-| Global Order Promising | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50275.htm#order26d-f50275) | Redwood Platform | Small scale | None |
 | Order Management | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51077.htm#order26d-f51077) | Redwood Platform | None | Opt In plus Setup |
 | Pricing | [Author and negotiate rate plan with entitlements](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50619.htm#order26d-f50619) | Redwood Platform | None | Setup Required |
 | Pricing | [Create and manage pricing matrix types](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50335.htm#order26d-f50335) | Redwood Platform | None | Setup Required |
@@ -230,7 +228,6 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Sales and Operations Planning | [Migrate Classic page layouts to Redwood pages and page groups](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50221.htm#sop26d-f50221) | Redwood Platform | Small scale | None |
 | Sales and Operations Planning | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50226.htm#sop26d-f50226) | Redwood Platform | Small scale | None |
 | Sales and Operations Planning | [Use parent levels for plan items in plan options for category level plans](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50209.htm#sop26d-f50209) | Redwood Platform | Small scale | None |
-| Sales and Operations Planning | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/sop26d/26D-sales-ops-wn-f50275.htm#sop26d-f50275) | Redwood Platform | Small scale | None |
 
 ## Self Service Financials What's New 26D
 
@@ -275,5 +272,4 @@ _Generated from the current readiness snapshot (2026-09-20T06:15:02.118112+00:00
 | Supply Planning | [Migrate Classic page layouts to Redwood pages and page groups](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50221.htm#scp26d-f50221) | Redwood Platform | Small scale | None |
 | Supply Planning | [Search the audit trail for measure-value updates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50200.htm#scp26d-f50200) | Redwood Platform Idea Lab | Small scale | None |
 | Supply Planning | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50226.htm#scp26d-f50226) | Redwood Platform | Small scale | None |
-| Supply Planning | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50275.htm#scp26d-f50275) | Redwood Platform | Small scale | None |
 | Supply Planning | [Work with plans during demand simulation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50195.htm#scp26d-f50195) | Redwood Platform | Small scale | None |
