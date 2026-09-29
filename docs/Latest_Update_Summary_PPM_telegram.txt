@@ -1,5 +1,5 @@
 Oracle Fusion Cloud PPM — Latest Update Summary
-(2026-09-28)
+(2026-09-29)
 
 • Project Management: 11 feature(s)
 
