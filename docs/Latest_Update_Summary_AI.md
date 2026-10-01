@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-09-29T06:15:53.247034+00:00)._
+_Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00)._
 
 ## Demand Management What's New 26D
 
