@@ -1,11 +1,11 @@
 Oracle Fusion Cloud Finance — Latest Update Summary
-(2026-10-01)
+(2026-10-05)
 
-• General Ledger: 0 feature(s)
+• General Ledger: 1 feature(s)
 • Accounts Payable: 5 feature(s)
 • Accounts Receivable: 4 feature(s)
 • Fixed Assets: 10 feature(s)
 • Cash Management: 11 feature(s)
 
-Total: 30 feature(s) across 5 area(s).
+Total: 31 feature(s) across 5 area(s).
 Full details attached.

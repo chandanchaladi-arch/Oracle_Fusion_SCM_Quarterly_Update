@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00)._
+_Generated from the current readiness snapshot (2026-10-05T06:20:26.060237+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -27,7 +27,6 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Cash Processing Agent | [Cash Processing Agent for bank statement reconciliation](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51246.htm#fins26d-f51246) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for cash positioning and improved liquidity](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51245.htm#fins26d-f51245) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for receipt processing and cash application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51477.htm#fins26d-f51477) | AI agent Redwood Platform | None | Setup Required |
-| Collections Agent | [Collector Workspace Agentic Application for enhanced collections actions](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51379.htm#fins26d-f51379) | Agentic app | None | Setup Required |
 | Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Setup Required |
 | Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Setup Required |
 | Integration & Extensibility | [Data Extraction Migration Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51362.htm#fins26d-f51362) | AI agent | None | Setup Required |
@@ -56,9 +55,20 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 
 | Area | Feature | Tags | Impact | Action to Enable |
 |---|---|---|---|---|
+| Common Procurement | [Collaborate on procurement documents and intake requests using Microsoft Teams](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50533.htm#proc26d-f50533) | AI agent | None | Setup Required |
 | Common Procurement | [Intake Request Creation Assistant - Create and review with enhanced features](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50312.htm#proc26d-f50312) | AI agent | None | Setup Required |
 | Procurement Contracts | [Redwood: Contract Expert](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50677.htm#proc26d-f50677) | AI agent Redwood Platform | None | Setup Required |
+| Sourcing | [Award and create purchase documents in the Sourcing Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51980.htm#proc26d-f51980) | Agentic app | None | Setup Required |
 | Sourcing | [Research and invite additional suppliers](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50357.htm#proc26d-f50357) | AI agent | None | Setup Required |
+| Supplier Portal | [Supplier Portal Advisor - Improve response time and quality](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51381.htm#proc26d-f51381) | AI agent | None | Setup Required |
+
+## Product Lifecycle Management What's New 26D
+
+[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/index.html)
+
+| Area | Feature | Tags | Impact | Action to Enable |
+|---|---|---|---|---|
+| Quality Inspection Management | [Quality Assurance Workspace](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50528.htm#plm26d-f50528) | Agentic app | Larger scale | None |
 
 ## Project Management What's New 26D
 

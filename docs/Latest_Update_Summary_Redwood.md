@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00)._
+_Generated from the current readiness snapshot (2026-10-05T06:20:26.060237+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -140,6 +140,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Purchasing | [Retain column personalizations for table layouts on Purchasing pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49253.htm#proc26d-f49253) | Redwood Platform | None | Opt In |
 | Purchasing | [Search and filter requisition lines, purchase orders, and purchase agreements using descriptive flexfields](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49560.htm#proc26d-f49560) | Redwood Platform | Small scale | Potential Setup |
 | Purchasing | [Search purchasing documents by contract number](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50539.htm#proc26d-f50539) | Redwood Platform | Small scale | Potential Setup |
+| Purchasing | [View invoices from purchase orders in Supplier Portal using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50624.htm#proc26d-f50624) | Redwood Platform | None | Setup Required |
 | Purchasing | [Manage contract user variable values in purchasing documents](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50468.htm#proc26d-f50468) | Redwood Platform | Small scale | None |
 | Purchasing | [Search purchase agreement lines while viewing or editing purchase agreements and change orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49537.htm#proc26d-f49537) | Redwood Platform | Small scale | None |
 | Purchasing | [Split budget-controlled requisition lines that aren't charged to projects](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50118.htm#proc26d-f50118) | Redwood Platform | Small scale | None |
@@ -152,6 +153,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Sourcing | [Navigate to Redwood pages from Sourcing notifications](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50547.htm#proc26d-f50547) | Redwood Platform | None | Setup Required |
 | Sourcing | [Set up Sourcing](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50341.htm#proc26d-f50341) | Redwood Platform | None | Opt In plus Setup |
 | Sourcing | [View negotiation and award approval history](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50343.htm#proc26d-f50343) | Redwood Platform | Small scale | Potential Setup |
+| Sourcing | [View negotiation line details in Supplier Portal](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50893.htm#proc26d-f50893) | Redwood Platform | None | Opt In plus Setup |
 | Sourcing | [Retain column personalizations for table layouts on Sourcing pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51244.htm#proc26d-f51244) | Redwood Platform | Small scale | None |
 | Supplier Model | [Add payment details with a new address or site](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50148.htm#proc26d-f50148) | Redwood Platform | Small scale | Potential Setup |
 | Supplier Model | [Create suppliers with trusted data from Moody's](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50149.htm#proc26d-f50149) | Redwood Platform | None | Setup Required |

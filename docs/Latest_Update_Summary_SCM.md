@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00)._
+_Generated from the current readiness snapshot (2026-10-05T06:20:26.060237+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -87,7 +87,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Inventory Management | [Route min-max created purchase requisitions for approval automatically](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50253.htm#inv26d-f50253) | None | Setup Required |
 | Inventory Management | [Select more rows during physical inventory count approval actions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50250.htm#inv26d-f50250) | None | Setup Required |
 | Inventory Management | [Use dynamic locator creation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f46476.htm#inv26d-f46476) | Small scale | Potential Setup |
-| Inventory Management | [Use grade and expiration date as on-hand attributes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50241.htm#inv26d-f50241) | None | Setup Required |
+| Inventory Management | [Use grade and expiration date as on-hand attributes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50241.htm#inv26d-f50241) | None | Opt In |
 | Inventory Management | [Use improved integration for transfer orders routed through Order Management](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50239.htm#inv26d-f50239) | None | Opt In plus Setup |
 | Inventory Management | [Use improved item search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50245.htm#inv26d-f50245) | None | Setup Required |
 | Inventory Management | [View about this record details in Redwood pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50249.htm#inv26d-f50249) | Small scale | Potential Setup |
@@ -167,6 +167,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Collaboration Messaging | [Receive a renewal quote from Oracle Subscription Management](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50497.htm#proc26d-f50497) | None | Setup Required |
 | Collaboration Messaging | [Receive a sales contract from Oracle CPQ](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50498.htm#proc26d-f50498) | None | Setup Required |
 | Collaboration Messaging | [Use Collaboration Messaging in Redwood experience with classic flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50500.htm#proc26d-f50500) | None | Setup Required |
+| Common Procurement | [Collaborate on procurement documents and intake requests using Microsoft Teams](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50533.htm#proc26d-f50533) | None | Setup Required |
 | Common Procurement | [Configure procurement business functions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49538.htm#proc26d-f49538) | None | Opt In plus Setup |
 | Common Procurement | [Create intake requests for procurement contracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50314.htm#proc26d-f50314) | Small scale | Potential Setup |
 | Common Procurement | [Intake Request Creation Assistant - Create and review with enhanced features](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50312.htm#proc26d-f50312) | None | Setup Required |
@@ -181,16 +182,19 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Procurement Contracts | [Selected Contracts Bug Fixes in This Update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50747.htm#proc26d-f50747) | Small scale | Potential Setup |
 | Purchasing | [Control supplier site attachments on purchasing documents](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49561.htm#proc26d-f49561) | None | Setup Required |
 | Purchasing | [Process multiple purchasing document actions in real time](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49975.htm#proc26d-f49975) | Small scale | Potential Setup |
+| Purchasing | [Procurement Spend Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51649.htm#proc26d-f51649) | None | Setup Required |
 | Purchasing | [Retain column personalizations for table layouts on Purchasing pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49253.htm#proc26d-f49253) | None | Opt In |
 | Purchasing | [Retain user-entered purchase order prices during retroactive pricing when blanket purchase agreement lines allow price override](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50124.htm#proc26d-f50124) | None | Opt In |
 | Purchasing | [Search and filter requisition lines, purchase orders, and purchase agreements using descriptive flexfields](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49560.htm#proc26d-f49560) | Small scale | Potential Setup |
 | Purchasing | [Search purchasing documents by contract number](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50539.htm#proc26d-f50539) | Small scale | Potential Setup |
+| Purchasing | [View invoices from purchase orders in Supplier Portal using a new user experience](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50624.htm#proc26d-f50624) | None | Setup Required |
 | Purchasing | [Manage contract user variable values in purchasing documents](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50468.htm#proc26d-f50468) | Small scale | None |
 | Purchasing | [Search purchase agreement lines while viewing or editing purchase agreements and change orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f49537.htm#proc26d-f49537) | Small scale | None |
 | Purchasing | [Selected Purchasing bug fixes in this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50656.htm#proc26d-f50656) | Small scale | None |
 | Purchasing | [Split budget-controlled requisition lines that aren't charged to projects](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50118.htm#proc26d-f50118) | Small scale | None |
 | Sourcing | [Access the intake request from the negotiation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50344.htm#proc26d-f50344) | None | Setup Required |
 | Sourcing | [Associate project tasks in negotiations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50342.htm#proc26d-f50342) | None | Setup Required |
+| Sourcing | [Award and create purchase documents in the Sourcing Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51980.htm#proc26d-f51980) | None | Setup Required |
 | Sourcing | [Fulfill requisitions when awarding to contract](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50356.htm#proc26d-f50356) | None | Opt In plus Setup |
 | Sourcing | [Include an introduction in negotiations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50390.htm#proc26d-f50390) | None | Setup Required |
 | Sourcing | [Manage negotiation templates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f42877.htm#proc26d-f42877) | Larger scale | Potential Setup |
@@ -199,7 +203,9 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Sourcing | [Research and invite additional suppliers](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50357.htm#proc26d-f50357) | None | Setup Required |
 | Sourcing | [Selected Sourcing bug fixes in this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50892.htm#proc26d-f50892) | None | Setup Required |
 | Sourcing | [Set up Sourcing](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50341.htm#proc26d-f50341) | None | Opt In plus Setup |
+| Sourcing | [Simulate award scenarios in the Sourcing Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51463.htm#proc26d-f51463) | Larger scale | Potential Setup |
 | Sourcing | [View negotiation and award approval history](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50343.htm#proc26d-f50343) | Small scale | Potential Setup |
+| Sourcing | [View negotiation line details in Supplier Portal](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50893.htm#proc26d-f50893) | None | Opt In plus Setup |
 | Sourcing | [Retain column personalizations for table layouts on Sourcing pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51244.htm#proc26d-f51244) | Small scale | None |
 | Supplier Model | [Add payment details with a new address or site](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50148.htm#proc26d-f50148) | Small scale | Potential Setup |
 | Supplier Model | [Create suppliers with trusted data from Moody's](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50149.htm#proc26d-f50149) | None | Setup Required |
@@ -207,6 +213,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Supplier Model | [Retain column personalizations for table layouts on Supplier Model pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50534.htm#proc26d-f50534) | Small scale | None |
 | Supplier Portal | [Allow multisupplier access in Supplier Portal](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f46281.htm#proc26d-f46281) | None | Opt In plus Setup |
 | Supplier Portal | [Redwood Supplier Portal Invoice Submission and Status Tracking](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50881.htm#proc26d-f50881) | None | Setup Required |
+| Supplier Portal | [Supplier Portal Advisor - Improve response time and quality](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51381.htm#proc26d-f51381) | None | Setup Required |
 | Supplier Qualification Management | [Manage automation errors](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50085.htm#proc26d-f50085) | None | Setup Required |
 | Supplier Qualification Management | [Research and add suppliers to initiatives](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50083.htm#proc26d-f50083) | None | Setup Required |
 | Supplier Qualification Management | [Use survey qualifications to evaluate supplier performance](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50084.htm#proc26d-f50084) | None | Setup Required |
@@ -238,6 +245,7 @@ _Generated from the current readiness snapshot (2026-10-01T06:18:03.159541+00:00
 | Quality Inspection Management | [Define customer inspection plans and compare inspection results](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50529.htm#plm26d-f50529) | None | Opt In plus Setup |
 | Quality Inspection Management | [Use electronic signatures and electronic records when activating quality inspection characteristics](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50531.htm#plm26d-f50531) | None | Setup Required |
 | Quality Inspection Management | [Inspect work in process using industrial handheld devices](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50530.htm#plm26d-f50530) | Small scale | None |
+| Quality Inspection Management | [Quality Assurance Workspace](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50528.htm#plm26d-f50528) | Larger scale | None |
 | SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f51077.htm#plm26d-f51077) | None | Opt In plus Setup |
 
 ## Sales and Operations Planning What's New 26D
