@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00)._
+_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -27,7 +27,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Cash Processing Agent | [Cash Processing Agent for bank statement reconciliation](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51246.htm#fins26d-f51246) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for cash positioning and improved liquidity](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51245.htm#fins26d-f51245) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for receipt processing and cash application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51477.htm#fins26d-f51477) | AI agent Redwood Platform | None | Setup Required |
-| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Setup Required |
+| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Opt In |
 | Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Setup Required |
 | Integration & Extensibility | [Data Extraction Migration Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51362.htm#fins26d-f51362) | AI agent | None | Setup Required |
 | Joint Venture Settlement | [Joint Venture Transactions Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50845.htm#fins26d-f50845) | AI agent | None | Setup Required |
@@ -48,6 +48,14 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Advanced Inventory Management | [LPN packing advisor](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50264.htm#inv26d-f50264) | AI agent | None | Visual Builder |
 | Product Recall Management | [AI-assisted recall notice creation from email attachments](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50557.htm#inv26d-f50557) | AI agent | None | Setup Required |
 | Receiving | [Storage location assistant](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50260.htm#inv26d-f50260) | AI agent | None | Visual Builder |
+
+## Order Management What's New 26D
+
+[Full documentation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/index.html)
+
+| Area | Feature | Tags | Impact | Action to Enable |
+|---|---|---|---|---|
+| Order Management | [Sales Order Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50454.htm#order26d-f50454) | Agentic app | None | Setup Required |
 
 ## Procurement What's New 26D
 

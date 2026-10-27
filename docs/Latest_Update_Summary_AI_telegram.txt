@@ -1,9 +1,10 @@
 Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
-(2026-10-11)
+(2026-10-27)
 
 • Demand Management: 3 feature(s)
 • Financials: 19 feature(s)
 • Inventory Management: 4 feature(s)
+• Order Management: 1 feature(s)
 • Procurement: 6 feature(s)
 • Product Lifecycle Management: 1 feature(s)
 • Project Management: 3 feature(s)
@@ -11,5 +12,5 @@ Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 • Self Service Financials: 2 feature(s)
 • Supply Planning: 1 feature(s)
 
-Total: 42 feature(s) across 9 area(s).
+Total: 43 feature(s) across 10 area(s).
 Full details attached.

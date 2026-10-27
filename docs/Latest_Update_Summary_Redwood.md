@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00)._
+_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -62,7 +62,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Collaboration Messaging | [Receive a renewal quote from Oracle Subscription Management](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50497.htm#fins26d-f50497) | Redwood Platform | None | Setup Required |
 | Collaboration Messaging | [Receive a sales contract from Oracle CPQ](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50498.htm#fins26d-f50498) | Redwood Platform | None | Setup Required |
 | Collaboration Messaging | [Use Collaboration Messaging in Redwood experience with classic flows](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50500.htm#fins26d-f50500) | Redwood Platform | None | Setup Required |
-| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Setup Required |
+| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Opt In |
 | Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Setup Required |
 | Joint Venture Settlement | [Revenue addition to partner contributions](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50568.htm#fins26d-f50568) | Redwood Platform | None | Setup Required |
 | Payables Agent | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | AI agent Redwood Platform | None | Opt In |
@@ -109,7 +109,14 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Global Order Promising | [Manage sourcing assignments in a spreadsheet](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50216.htm#order26d-f50216) | Redwood Platform | None | Setup Required |
 | Global Order Promising | [Respect expiration dates of specific on-hand quantities in material reservations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50222.htm#order26d-f50222) | Redwood Platform | Small scale | Potential Setup |
 | Global Order Promising | [Respect minimum remaining shelf life material constraints in Order Promising](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50210.htm#order26d-f50210) | Redwood Platform Idea Lab | None | Opt In plus Setup |
-| Order Management | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51077.htm#order26d-f51077) | Redwood Platform | None | Opt In plus Setup |
+| Order Management | [Configurator runtime designer](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50491.htm#order26d-f50491) | Redwood Platform | None | Setup Required |
+| Order Management | [Return and copy support for classic configured model sales orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50488.htm#order26d-f50488) | Redwood Platform | Small scale | Potential Setup |
+| Order Management | [AI agent activity audit for sales orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50504.htm#order26d-f50504) | Redwood Platform | None | Setup Required |
+| Order Management | [Asset-based ordering](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50473.htm#order26d-f50473) | Redwood Platform | None | Opt In |
+| Order Management | [Configurator runtime enhancements](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50492.htm#order26d-f50492) | Redwood Platform | None | Setup Required |
+| Order Management | [Create and process coverages and subscriptions within pick-to-order models](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50447.htm#order26d-f50447) | Redwood Platform | Small scale | Potential Setup |
+| Order Management | [Import exceptions page](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50456.htm#order26d-f50456) | Redwood Platform | None | Setup Required |
+| Order Management | [Manage order management parameters](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51272.htm#order26d-f51272) | Redwood Platform | None | Setup Required |
 | Pricing | [Author and negotiate rate plan with entitlements](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50619.htm#order26d-f50619) | Redwood Platform | None | Setup Required |
 | Pricing | [Create and manage pricing matrix types](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50335.htm#order26d-f50335) | Redwood Platform | None | Setup Required |
 | Pricing | [Create and manage pricing message token attribute definitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50336.htm#order26d-f50336) | Redwood Platform | None | Setup Required |
@@ -117,6 +124,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Pricing | [Create and manage pricing rounding rule assignments](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50338.htm#order26d-f50338) | Redwood Platform | None | Setup Required |
 | Pricing | [Create and manage pricing rounding rules](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50337.htm#order26d-f50337) | Redwood Platform | None | Setup Required |
 | Pricing | [Manage pricing parameters](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50339.htm#order26d-f50339) | Redwood Platform | None | Setup Required |
+| SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51077.htm#order26d-f51077) | Redwood Platform | None | Opt In plus Setup |
 
 ## Procurement What's New 26D
 

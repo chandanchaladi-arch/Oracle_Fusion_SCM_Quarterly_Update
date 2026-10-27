@@ -1,10 +1,10 @@
 Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
-(2026-10-11)
+(2026-10-27)
 
 • Demand Management: 40 feature(s)
 • Financials: 14 feature(s)
 • Inventory Management: 18 feature(s)
-• Order Management: 16 feature(s)
+• Order Management: 24 feature(s)
 • Procurement: 41 feature(s)
 • Product Lifecycle Management: 14 feature(s)
 • Project Management: 2 feature(s)
@@ -12,5 +12,5 @@ Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 • Self Service Financials: 2 feature(s)
 • Supply Planning: 29 feature(s)
 
-Total: 204 feature(s) across 10 area(s).
+Total: 212 feature(s) across 10 area(s).
 Full details attached.

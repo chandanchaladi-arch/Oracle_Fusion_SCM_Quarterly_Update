@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00)._
+_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -44,6 +44,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Replenishment Planning | [Improve chart, pivot table, and filter interactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50271.htm#demand26d-f50271) | None | Opt In |
 | Replenishment Planning | [Manage sourcing assignments in a spreadsheet](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50216.htm#demand26d-f50216) | None | Setup Required |
 | Replenishment Planning | [Migrate Classic page layouts to Redwood pages and page groups](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50232.htm#demand26d-f50232) | None | Opt In |
+| Replenishment Planning | [Shipment Load Planning Workspace](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50218.htm#demand26d-f50218) | None | Setup Required |
 | Replenishment Planning | [Specify override values for policy parameters and target values in decimals](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50206.htm#demand26d-f50206) | None | Opt In plus Setup |
 | Replenishment Planning | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50265.htm#demand26d-f50265) | None | Opt In |
 | Replenishment Planning | [View record audit details](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/demand26d/26D-demand-wn-f50277.htm#demand26d-f50277) | None | Opt In |
@@ -138,8 +139,18 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Global Order Promising | [Manage sourcing assignments in a spreadsheet](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50216.htm#order26d-f50216) | None | Setup Required |
 | Global Order Promising | [Respect expiration dates of specific on-hand quantities in material reservations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50222.htm#order26d-f50222) | Small scale | Potential Setup |
 | Global Order Promising | [Respect minimum remaining shelf life material constraints in Order Promising](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50210.htm#order26d-f50210) | None | Opt In plus Setup |
-| Order Management | [Enforce Minimum Remaining Shelf Life in Order Fulfillment](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50486.htm#order26d-f50486) | None | Setup Required |
-| Order Management | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51077.htm#order26d-f51077) | None | Opt In plus Setup |
+| Order Management | [Configurator runtime designer](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50491.htm#order26d-f50491) | None | Setup Required |
+| Order Management | [Return and copy support for classic configured model sales orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50488.htm#order26d-f50488) | Small scale | Potential Setup |
+| Order Management | [AI agent activity audit for sales orders](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50504.htm#order26d-f50504) | None | Setup Required |
+| Order Management | [Asset-based ordering](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50473.htm#order26d-f50473) | None | Opt In |
+| Order Management | [Configurator runtime enhancements](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50492.htm#order26d-f50492) | None | Setup Required |
+| Order Management | [Create and process coverages and subscriptions within pick-to-order models](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50447.htm#order26d-f50447) | Small scale | Potential Setup |
+| Order Management | [Enforce minimum remaining shelf life in order fulfillment](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50486.htm#order26d-f50486) | None | Setup Required |
+| Order Management | [Import exceptions page](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50456.htm#order26d-f50456) | None | Setup Required |
+| Order Management | [Manage order management parameters](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51272.htm#order26d-f51272) | None | Setup Required |
+| Order Management | [Recommended product configurations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50490.htm#order26d-f50490) | None | Setup Required |
+| Order Management | [Sales Order Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50454.htm#order26d-f50454) | None | Setup Required |
+| Order Management | [TO-OM OutBound: inventory to change integration to stage transfer orders in order management interface table](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50489.htm#order26d-f50489) | None | Setup Required |
 | Pricing | [Author and negotiate rate plan with entitlements](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50619.htm#order26d-f50619) | None | Setup Required |
 | Pricing | [Create and manage pricing matrix types](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50335.htm#order26d-f50335) | None | Setup Required |
 | Pricing | [Create and manage pricing message token attribute definitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50336.htm#order26d-f50336) | None | Setup Required |
@@ -150,6 +161,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Pricing | [Price bundles with coverages and subscriptions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50620.htm#order26d-f50620) | None | Setup Required |
 | Pricing | [Enable formulas in rate plans to calculate charges for subscription items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50340.htm#order26d-f50340) | Small scale | None |
 | Pricing | [Import large numbers of rate plans for price lists](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50621.htm#order26d-f50621) | Small scale | None |
+| SCM Common Components | [Support for user-defined queries in data extracts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f51077.htm#order26d-f51077) | None | Opt In plus Setup |
 | Supplier Channel Management | [Reopen settlement pending supplier claims when payables invoices are canceled](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50807.htm#order26d-f50807) | None | Opt In plus Setup |
 | Supply Chain Orchestration | [Enable intra-organizational material transfers for transfer supply requests originating from Self Service Procurement](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50332.htm#order26d-f50332) | None | Setup Required |
 | Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50330.htm#order26d-f50330) | None | Setup Required |
@@ -316,6 +328,7 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Supply Planning | [Manage sourcing assignments in a spreadsheet](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50216.htm#scp26d-f50216) | None | Setup Required |
 | Supply Planning | [Respect expiration dates of specific on-hand quantities in material reservations](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50222.htm#scp26d-f50222) | Small scale | Potential Setup |
 | Supply Planning | [Respect minimum remaining shelf life material constraints in Supply Planning](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50284.htm#scp26d-f50284) | None | Opt In plus Setup |
+| Supply Planning | [Shipment Load Planning Workspace](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50218.htm#scp26d-f50218) | None | Setup Required |
 | Supply Planning | [Specify minimum shelf life controls for perishable items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50290.htm#scp26d-f50290) | None | Opt In plus Setup |
 | Supply Planning | [Export a list of measures](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50194.htm#scp26d-f50194) | Small scale | None |
 | Supply Planning | [Export details of the plan status](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50196.htm#scp26d-f50196) | Small scale | None |
@@ -325,5 +338,6 @@ _Generated from the current readiness snapshot (2026-10-11T06:16:02.945250+00:00
 | Supply Planning | [Include shipping method while exporting rules data](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50283.htm#scp26d-f50283) | Small scale | None |
 | Supply Planning | [Migrate Classic page layouts to Redwood pages and page groups](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50221.htm#scp26d-f50221) | Small scale | None |
 | Supply Planning | [Search the audit trail for measure-value updates](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50200.htm#scp26d-f50200) | Small scale | None |
+| Supply Planning | [Supply Planning Allocation Workspace](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50396.htm#scp26d-f50396) | Small scale | None |
 | Supply Planning | [Support date measures during export and import](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50226.htm#scp26d-f50226) | Small scale | None |
 | Supply Planning | [Work with plans during demand simulation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/scp26d/26D-sc-planning-wn-f50195.htm#scp26d-f50195) | Small scale | None |
