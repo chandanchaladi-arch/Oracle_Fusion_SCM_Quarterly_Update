@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
+_Generated from the current readiness snapshot (2026-10-30T12:18:13.635762+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -158,6 +158,7 @@ _Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00
 | Pricing | [Create and manage pricing rounding rule assignments](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50338.htm#order26d-f50338) | None | Setup Required |
 | Pricing | [Create and manage pricing rounding rules](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50337.htm#order26d-f50337) | None | Setup Required |
 | Pricing | [Manage pricing parameters](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50339.htm#order26d-f50339) | None | Setup Required |
+| Pricing | [Price Administration Assistant - Enhancements for promotions and discounts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50618.htm#order26d-f50618) | None | Setup Required |
 | Pricing | [Price bundles with coverages and subscriptions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50620.htm#order26d-f50620) | None | Setup Required |
 | Pricing | [Enable formulas in rate plans to calculate charges for subscription items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50340.htm#order26d-f50340) | Small scale | None |
 | Pricing | [Import large numbers of rate plans for price lists](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50621.htm#order26d-f50621) | Small scale | None |
@@ -252,6 +253,7 @@ _Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00
 | Product Management | [View user access analysis and configure catalog exclusion condition](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50663.htm#plm26d-f50663) | None | Setup Required |
 | Product Management | [Capture effective date ranges on deviation change requests](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50661.htm#plm26d-f50661) | Small scale | None |
 | Product Management | [Define item attributes for sublot management and self-service commerce](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50664.htm#plm26d-f50664) | Small scale | None |
+| Product Management | [Product Readiness Workspace - Analyze BOM risk and grading](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f51451.htm#plm26d-f51451) | Small scale | None |
 | Product Management | [Selected Product Management bug fixes In this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50751.htm#plm26d-f50751) | Small scale | None |
 | Product Management | [Use comprehensive business events for workflow status transitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50659.htm#plm26d-f50659) | Small scale | None |
 | Quality Inspection Management | [Define customer inspection plans and compare inspection results](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50529.htm#plm26d-f50529) | None | Opt In plus Setup |

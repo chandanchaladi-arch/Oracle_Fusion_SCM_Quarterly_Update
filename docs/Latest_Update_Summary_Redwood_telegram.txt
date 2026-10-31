@@ -1,5 +1,5 @@
 Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
-(2026-10-27)
+(2026-10-30)
 
 • Demand Management: 40 feature(s)
 • Financials: 14 feature(s)

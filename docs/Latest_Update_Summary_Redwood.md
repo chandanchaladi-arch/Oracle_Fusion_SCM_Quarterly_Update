@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
+_Generated from the current readiness snapshot (2026-10-30T12:18:13.635762+00:00)._
 
 ## Demand Management What's New 26D
 

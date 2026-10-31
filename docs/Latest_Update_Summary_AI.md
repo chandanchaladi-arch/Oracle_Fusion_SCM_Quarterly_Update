@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00)._
+_Generated from the current readiness snapshot (2026-10-30T12:18:13.635762+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -56,6 +56,7 @@ _Generated from the current readiness snapshot (2026-10-27T11:43:48.644787+00:00
 | Area | Feature | Tags | Impact | Action to Enable |
 |---|---|---|---|---|
 | Order Management | [Sales Order Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50454.htm#order26d-f50454) | Agentic app | None | Setup Required |
+| Pricing | [Price Administration Assistant - Enhancements for promotions and discounts](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/order26d/26D-order-mgmt-wn-f50618.htm#order26d-f50618) | AI agent | None | Setup Required |
 
 ## Procurement What's New 26D
 
