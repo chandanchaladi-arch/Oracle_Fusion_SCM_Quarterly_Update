@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud PPM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-10-30T12:18:13.635762+00:00)._
+_Generated from the current readiness snapshot (2026-11-02T14:57:32.803721+00:00)._
 
 ## Project Management What's New 26D
 
