@@ -1,5 +1,5 @@
 Oracle Fusion Cloud SCM — Latest Update Summary
-(2026-11-05)
+(2026-11-08)
 
 • Demand Management: 49 feature(s)
 • Inventory Management: 56 feature(s)

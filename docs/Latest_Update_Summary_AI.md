@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-05T14:09:25.448001+00:00)._
+_Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -70,6 +70,7 @@ _Generated from the current readiness snapshot (2026-11-05T14:09:25.448001+00:00
 | Sourcing | [Award and create purchase documents in the Sourcing Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51980.htm#proc26d-f51980) | Agentic app | None | Setup Required |
 | Sourcing | [Research and invite additional suppliers](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50357.htm#proc26d-f50357) | AI agent | None | Setup Required |
 | Supplier Portal | [Supplier Portal Advisor - Improve response time and quality](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51381.htm#proc26d-f51381) | AI agent | None | Setup Required |
+| Supplier Qualification Management | [Research and add suppliers to initiatives](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50083.htm#proc26d-f50083) | AI agent Redwood Platform | None | Setup Required |
 
 ## Product Lifecycle Management What's New 26D
 

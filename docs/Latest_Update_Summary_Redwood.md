@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-05T14:09:25.448001+00:00)._
+_Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -171,7 +171,7 @@ _Generated from the current readiness snapshot (2026-11-05T14:09:25.448001+00:00
 | Supplier Portal | [Allow multisupplier access in Supplier Portal](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f46281.htm#proc26d-f46281) | Redwood Platform Idea Lab | None | Opt In plus Setup |
 | Supplier Portal | [Redwood Supplier Portal Invoice Submission and Status Tracking](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50881.htm#proc26d-f50881) | Redwood Platform | None | Setup Required |
 | Supplier Qualification Management | [Manage automation errors](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50085.htm#proc26d-f50085) | Redwood Platform | None | Setup Required |
-| Supplier Qualification Management | [Research and add suppliers to initiatives](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50083.htm#proc26d-f50083) | Redwood Platform | None | Setup Required |
+| Supplier Qualification Management | [Research and add suppliers to initiatives](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50083.htm#proc26d-f50083) | AI agent Redwood Platform | None | Setup Required |
 | Supplier Qualification Management | [Use survey qualifications to evaluate supplier performance](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50084.htm#proc26d-f50084) | Redwood Platform | None | Setup Required |
 | Supplier Qualification Management | [Retain column personalizations for table layouts on Supplier Qualification Management pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50535.htm#proc26d-f50535) | Redwood Platform | Small scale | None |
 
