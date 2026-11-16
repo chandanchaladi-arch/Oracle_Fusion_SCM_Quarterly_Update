@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00)._
+_Generated from the current readiness snapshot (2026-11-15T13:35:16.527517+00:00)._
 
 ## Demand Management What's New 26D
 

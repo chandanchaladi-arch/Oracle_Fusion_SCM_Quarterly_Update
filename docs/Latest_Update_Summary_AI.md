@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00)._
+_Generated from the current readiness snapshot (2026-11-15T13:35:16.527517+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -27,14 +27,14 @@ _Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00
 | Cash Processing Agent | [Cash Processing Agent for bank statement reconciliation](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51246.htm#fins26d-f51246) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for cash positioning and improved liquidity](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51245.htm#fins26d-f51245) | AI agent Redwood Platform | None | Setup Required |
 | Cash Processing Agent | [Cash Processing Agent for receipt processing and cash application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51477.htm#fins26d-f51477) | AI agent Redwood Platform | None | Setup Required |
-| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Opt In |
-| Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Setup Required |
+| Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50632.htm#fins26d-f50632) | AI agent Redwood Platform | None | Setup Required |
+| Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51260.htm#fins26d-f51260) | AI agent Redwood Platform | None | Opt In |
 | Integration & Extensibility | [Data Extraction Migration Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51362.htm#fins26d-f51362) | AI agent | None | Setup Required |
 | Joint Venture Settlement | [Joint Venture Transactions Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50845.htm#fins26d-f50845) | AI agent | None | Setup Required |
 | Joint Venture Settlement | [Partner Contribution Replenishment Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50781.htm#fins26d-f50781) | AI agent | None | Setup Required |
 | Joint Venture Settlement | [Reversal and Rebilling Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50477.htm#fins26d-f50477) | AI agent | None | Setup Required |
-| Payables Agent | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | AI agent Redwood Platform | None | Opt In |
-| Payables Agent | [Payables Period Close Workspace](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51249.htm#fins26d-f51249) | Agentic app | Larger scale | None |
+| Payables Agent | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | AI agent Redwood Platform | None | Setup Required |
+| Payables Agent | [Payables Period Close Workspace](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51249.htm#fins26d-f51249) | Agentic app | None | Security Adjustment |
 | Payments Agent | [Payments Agent for Payment Options, Offers, and Execution](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51180.htm#fins26d-f51180) | AI agent Redwood Platform | None | Setup Required |
 | U.S. Federal Treasury Reporting and Interfaces | [U.S. Federal Treasury Confirmation Assistant](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50749.htm#fins26d-f50749) | AI agent | None | Setup Required |
 
@@ -107,7 +107,7 @@ _Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00
 | Area | Feature | Tags | Impact | Action to Enable |
 |---|---|---|---|---|
 | Expenses Agent | [Expenses Agent for itemization and attendees](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ssfin26d/26D-ssfin-wn-f50632.htm#ssfin26d-f50632) | AI agent Redwood Platform | None | Setup Required |
-| Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ssfin26d/26D-ssfin-wn-f51260.htm#ssfin26d-f51260) | AI agent Redwood Platform | None | Setup Required |
+| Expenses Agent | [Expenses Agent usability enhancements for employees and delegates](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/ssfin26d/26D-ssfin-wn-f51260.htm#ssfin26d-f51260) | AI agent Redwood Platform | None | Opt In |
 
 ## Supply Planning What's New 26D
 

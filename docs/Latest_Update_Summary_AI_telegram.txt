@@ -1,5 +1,5 @@
 Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
-(2026-11-08)
+(2026-11-15)
 
 • Demand Management: 3 feature(s)
 • Financials: 19 feature(s)

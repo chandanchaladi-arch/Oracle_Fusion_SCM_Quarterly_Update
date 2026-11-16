@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Finance — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00)._
+_Generated from the current readiness snapshot (2026-11-15T13:35:16.527517+00:00)._
 
 ## Financials What's New 26D
 
@@ -27,9 +27,10 @@ _Generated from the current readiness snapshot (2026-11-08T12:53:27.339449+00:00
 | Ledger Agentic App | General Ledger | [Ledger Agentic Application](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51915.htm#fins26d-f51915) | None | Setup Required |
 | Manage Cash Activities and Operations | Cash Management | [Embedded Banking Services - Intraday bank statement processing](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51247.htm#fins26d-f51247) | None | Setup Required |
 | Manage Payment Configuration | Cash Management | [Automated Zengin master data upload for bulk maintenance of banks and bank branches in Japan](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51248.htm#fins26d-f51248) | Small scale | Potential Setup |
-| Payables Agent | Accounts Payable | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | None | Opt In |
-| Payables Agent | Accounts Payable | [Payables Period Close Workspace](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51249.htm#fins26d-f51249) | Larger scale | None |
+| Payables Agent | Accounts Payable | [Payables Agent for invoice ingestion, compliance and control](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51289.htm#fins26d-f51289) | None | Setup Required |
+| Payables Agent | Accounts Payable | [Payables Period Close Workspace](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51249.htm#fins26d-f51249) | None | Security Adjustment |
 | Payables Invoice Processing | Accounts Payable | [Landed cost charge association to invoice lines using file-based data import](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50875.htm#fins26d-f50875) | None | Setup Required |
+| Payables Invoice Processing | Accounts Payable | [US 1099 forms and electronic reporting updates for tax year 2026](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f52419.htm#fins26d-f52419) | Report | None |
 | Payables Invoice Processing | Accounts Payable | [Electronic Filing of Forms 1099-MISC, 1099-NEC, 1099-G, and 1099-INT using Information Returns Intake System](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50748.htm#fins26d-f50748) | Report | None |
 | Payment Processing | Cash Management | [ISO Positive Pay File for Voided Checks](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f50872.htm#fins26d-f50872) | Small scale | None |
 | Payments Agent | Cash Management | [Payments Agent for Payment Options, Offers, and Execution](https://docs.oracle.com/en/cloud/saas/readiness/erp/26d/fins26d/26D-fin-wn-f51180.htm#fins26d-f51180) | None | Setup Required |
