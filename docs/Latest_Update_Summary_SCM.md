@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-15T13:35:16.527517+00:00)._
+_Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -256,7 +256,6 @@ _Generated from the current readiness snapshot (2026-11-15T13:35:16.527517+00:00
 | Product Management | [Define item attributes for sublot management and self-service commerce](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50664.htm#plm26d-f50664) | Small scale | None |
 | Product Management | [Product Readiness Workspace - Analyze BOM risk and grading](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f51451.htm#plm26d-f51451) | Small scale | None |
 | Product Management | [Selected Product Management bug fixes In this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50751.htm#plm26d-f50751) | Small scale | None |
-| Product Management | [Use comprehensive business events for workflow status transitions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50659.htm#plm26d-f50659) | Small scale | None |
 | Quality Inspection Management | [Define customer inspection plans and compare inspection results](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50529.htm#plm26d-f50529) | None | Opt In plus Setup |
 | Quality Inspection Management | [Use electronic signatures and electronic records when activating quality inspection characteristics](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50531.htm#plm26d-f50531) | None | Setup Required |
 | Quality Inspection Management | [Inspect work in process using industrial handheld devices](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/plm26d/26D-plm-wn-f50530.htm#plm26d-f50530) | Small scale | None |
