@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud AI-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00)._
+_Generated from the current readiness snapshot (2026-11-26T16:31:31.488647+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -46,6 +46,7 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 |---|---|---|---|---|
 | Advanced Inventory Management | [Inventory Task Allocation Assistant - Assign tasks to robotic material handling equipment](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50263.htm#inv26d-f50263) | AI agent | None | Setup Required |
 | Advanced Inventory Management | [LPN packing advisor](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50264.htm#inv26d-f50264) | AI agent | None | Visual Builder |
+| Cost Management | [Cost Management Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f52703.htm#inv26d-f52703) | Agentic app | None | Setup Required |
 | Product Recall Management | [AI-assisted recall notice creation from email attachments](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50557.htm#inv26d-f50557) | AI agent | None | Setup Required |
 | Receiving | [Storage location assistant](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50260.htm#inv26d-f50260) | AI agent | None | Visual Builder |
 

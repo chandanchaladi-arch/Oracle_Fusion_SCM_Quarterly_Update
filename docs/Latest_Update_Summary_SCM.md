@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud SCM — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00)._
+_Generated from the current readiness snapshot (2026-11-26T16:31:31.488647+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -72,6 +72,8 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 | Collaboration Messaging | [Receive a renewal quote from Oracle Subscription Management](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50497.htm#inv26d-f50497) | None | Setup Required |
 | Collaboration Messaging | [Receive a sales contract from Oracle CPQ](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50498.htm#inv26d-f50498) | None | Setup Required |
 | Collaboration Messaging | [Use Collaboration Messaging in Redwood experience with classic flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50500.htm#inv26d-f50500) | None | Setup Required |
+| Cost Management | [Cost Accounting Close Workspace: Analyze gross margin using Oracle Fusion Claw](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f52702.htm#inv26d-f52702) | None | Setup Required |
+| Cost Management | [Cost Management Command Center](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f52703.htm#inv26d-f52703) | None | Setup Required |
 | Cost Management | [Exclude nonquantity tracked subinventory locations from inventory valuation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50839.htm#inv26d-f50839) | None | Opt In plus Setup |
 | Cost Management | [Preserve inventory cost and lot traceability during item conversion](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50840.htm#inv26d-f50840) | Small scale | Potential Setup |
 | Cost Management | [Default cost organization across Cost Accounting pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50836.htm#inv26d-f50836) | Small scale | None |
@@ -87,7 +89,7 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 | Inventory Management | [Enable electronic records and electronic signatures for material transactions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50246.htm#inv26d-f50246) | None | Setup Required |
 | Inventory Management | [Perform item translate for lot control items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50248.htm#inv26d-f50248) | Small scale | Potential Setup |
 | Inventory Management | [Route min-max created purchase requisitions for approval automatically](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50253.htm#inv26d-f50253) | None | Setup Required |
-| Inventory Management | [Select more rows during physical inventory count approval actions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50250.htm#inv26d-f50250) | None | Setup Required |
+| Inventory Management | [Select more rows during physical inventory count approval actions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50250.htm#inv26d-f50250) | None | Opt In |
 | Inventory Management | [Use dynamic locator creation](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f46476.htm#inv26d-f46476) | Small scale | Potential Setup |
 | Inventory Management | [Use grade and expiration date as on-hand attributes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50241.htm#inv26d-f50241) | None | Opt In |
 | Inventory Management | [Use improved integration for transfer orders routed through Order Management](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50239.htm#inv26d-f50239) | None | Opt In plus Setup |
@@ -120,6 +122,7 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 | Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50330.htm#inv26d-f50330) | None | Setup Required |
 | Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50331.htm#inv26d-f50331) | None | Setup Required |
 | Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50333.htm#inv26d-f50333) | None | Setup Required |
+| Supply Chain Orchestration | [Selected Supply Chain Orchestration bug fixes in this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f51326.htm#inv26d-f51326) | Small scale | None |
 
 ## Order Management What's New 26D
 
@@ -236,6 +239,7 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 | Supply Chain Orchestration | [Inventory on hand striping attributes for manual transfer supply requests in Supply Chain Orchestration](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50330.htm#proc26d-f50330) | None | Setup Required |
 | Supply Chain Orchestration | [Route inventory min-max planning and PAR replenishment purchase requests through procurement approval workflow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50331.htm#proc26d-f50331) | None | Setup Required |
 | Supply Chain Orchestration | [Support minimum remaining shelf life for back-to-back transfer and on hand flows](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f50333.htm#proc26d-f50333) | None | Setup Required |
+| Supply Chain Orchestration | [Selected Supply Chain Orchestration bug fixes in this update](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/proc26d/26D-procurement-wn-f51326.htm#proc26d-f51326) | Small scale | None |
 
 ## Product Lifecycle Management What's New 26D
 

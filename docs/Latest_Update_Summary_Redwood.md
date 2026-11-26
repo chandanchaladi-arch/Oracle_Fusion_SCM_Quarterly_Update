@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Redwood-Tagged Features — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00)._
+_Generated from the current readiness snapshot (2026-11-26T16:31:31.488647+00:00)._
 
 ## Demand Management What's New 26D
 
@@ -86,7 +86,8 @@ _Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00
 | Inventory Management | [Configure and use parent lot for lot-controlled items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50782.htm#inv26d-f50782) | Redwood Platform | None | Setup Required |
 | Inventory Management | [Control creation of new subinventories with a privilege](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50694.htm#inv26d-f50694) | Redwood Platform Idea Lab | None | Visual Builder |
 | Inventory Management | [Perform item translate for lot control items](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50248.htm#inv26d-f50248) | Redwood Platform | Small scale | Potential Setup |
-| Inventory Management | [Select more rows during physical inventory count approval actions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50250.htm#inv26d-f50250) | Redwood Platform Idea Lab | None | Setup Required |
+| Inventory Management | [Select more rows during physical inventory count approval actions](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50250.htm#inv26d-f50250) | Redwood Platform Idea Lab | None | Opt In |
+| Inventory Management | [Use grade and expiration date as on-hand attributes](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50241.htm#inv26d-f50241) | Redwood Platform | None | Opt In |
 | Inventory Management | [Use improved item search](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50245.htm#inv26d-f50245) | Redwood Platform Idea Lab | None | Setup Required |
 | Inventory Management | [View about this record details in Redwood pages](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50249.htm#inv26d-f50249) | Redwood Platform Idea Lab | Small scale | Potential Setup |
 | Receiving | [Receive goods using a mobile device using an optimized flow](https://docs.oracle.com/en/cloud/saas/readiness/scm/26d/inv26d/26D-inventory-wn-f50258.htm#inv26d-f50258) | Redwood Platform Idea Lab | None | Setup Required |

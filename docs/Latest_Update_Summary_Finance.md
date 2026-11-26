@@ -1,6 +1,6 @@
 # Oracle Fusion Cloud Finance — Latest Update Summary
 
-_Generated from the current readiness snapshot (2026-11-17T15:37:33.533595+00:00)._
+_Generated from the current readiness snapshot (2026-11-26T16:31:31.488647+00:00)._
 
 ## Financials What's New 26D
 
